@@ -8,34 +8,26 @@ TIMEZONE = 'GMT'
 
 DEFAULT_LANG = 'en'
 
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
 # Blogroll
 LINKS = (
-    ('About Me', 'content/about.html/'),
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+    ("You can modify those links in your config file, what", "#"),
 )
-
-# File extensions for content (if you need to specify)
-PAGE_EXTENSIONS = ['.html']
-
-# Index path
-INDEX_PATH = 'index.html'
-
-# Output path
-OUTPUT_PATH = 'output'
-
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
+    ("You can add links in your config file, here!?", "#"),
     ("Another social link", "#"),
 )
-
-# URL settings
-ARTICLE_URL = '{slug}.html'
-PAGE_URL = '{slug}.html'
 
 DEFAULT_PAGINATION = False
 
@@ -43,4 +35,6 @@ DEFAULT_PAGINATION = False
 # RELATIVE_URLS = True
 
 # Theme
-THEME = 'themes/Flex'
+THEME = "themes/Flex"
+
+RELATIVE_URLS = True
