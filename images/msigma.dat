@@ -1,0 +1,34 @@
+#This Table corresponds to Table 1 of Gebhardt et al., 2000, ApJL, 539, L13 
+#The table has been modified to treat the error of the mass of black holes as Gaussian white noise
+#This modification has been done for mere educational propouse
+#Galaxy       Mbh (Solar) Mhb_std (Solar)	v_std (km/s)
+#		Stellar Dynamical	Estimates
+Milky Way	,  2.6e6, 0.2e6,	  75
+M31	        , 3.5e7, 1.5e7,	  160
+M32	        ,  3.7e6, 1.0e6,	  75
+NGC 821	    ,  5.0e7, 1.0e7,	  209
+NGC 1023	,  3.9e7, 1.0e7,	  205
+NGC 2778	,  2.0e7, 1.0e7,	  175
+NGC 3377	,  1.0e8, 0.5e8,	  145
+NGC 3379	,  1.0e8, 0.5e8,	  206
+NGC 3384	,  1.8e7, 0.5e7,	  143
+NGC 3608	,  1.1e8, 0.8e8,	  182
+NGC 4291	,  1.5e8, 0.7e8,	  242
+NGC 4342	,  3.0e8, 1.0e8,	  225
+NGC 4473	,  1.0e8, 0.5e8,	  190
+NGC 4564	,  5.7e7, 1.5e7,	  162
+NGC 4649	,  2.0e9, 1.0e9,	  375
+NGC 4697	,  1.2e8, 0.4e8,	  177
+NGC 5845	,  3.2e8, 0.7e8,	  234
+NGC 7457	,  3.4e6, 1.7e6,	  67
+#		Gasdynamical Estimates	
+M87	        ,  2.5e9, 0.7e9,     375
+NGC 4261	,  5.4e8, 0.9e8,     315
+NGC 4374	,  1.8e9, 0.9e9,     296
+NGC 6251	,  6.0e8, 2.0e8,     290
+NGC 7052	,  3.3e8, 1.3e8,     266
+IC 1459    	,  3.5e8, 1.4e8,	  323
+#		Maser Dynamical Estimates	
+NGC 1068	,  1.7e7, 1.0e8,	  151
+NGC 4258	,  4.2e7, 0.2e7,	  120
+

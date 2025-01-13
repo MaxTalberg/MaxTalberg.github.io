@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://oscaribv.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://oscaribv.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://oscaribv.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://oscaribv.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://oscaribv.github.io/theme/font-awesome/css/solid.css">
+
+
+
+
+    <link rel="shortcut icon" href="https://oscaribv.github.io/images/io.jpg" type="image/x-icon">
+    <link rel="icon" href="https://oscaribv.github.io/images/io.jpg" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-108009879-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<meta name="author" content="Oscar Barragán" />
+<meta name="description" content="On Gaussian-Process All starts with Data. A collection of observations/measurement of some observable that we want to describe with some model in order to infer physics. In my case as an astronomer, I want to see if a given model predicts the observations that deny the inmutability of the …" />
+<meta name="keywords" content="tutorials, GPs">
+
+<link rel="alternate" href="https://oscaribv.github.io/2017/test.html" hreflang="en" />
+<link rel="alternate" href="https://oscaribv.github.io/2017/test.html" hreflang="en" />
+
+<meta property="og:site_name" content="Oscar Barragán's web page"/>
+<meta property="og:title" content="Test"/>
+<meta property="og:description" content="On Gaussian-Process All starts with Data. A collection of observations/measurement of some observable that we want to describe with some model in order to infer physics. In my case as an astronomer, I want to see if a given model predicts the observations that deny the inmutability of the …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://oscaribv.github.io/2017/test.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-12-02 00:00:00+00:00"/>
+<meta property="article:modified_time" content="2019-06-30 00:00:00+01:00"/>
+<meta property="article:author" content="https://oscaribv.github.io/author/oscar-barragan.html">
+<meta property="article:section" content="tutorials"/>
+<meta property="article:tag" content="tutorials"/>
+<meta property="article:tag" content="GPs"/>
+<meta property="og:image" content="">
+
+  <title>Oscar Barragán's web page &ndash; Test</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://oscaribv.github.io">
+        <img src="https://oscaribv.github.io/theme/img/profile.png" alt="Oscar Barragán" title="Oscar Barragán">
+      </a>
+      <h1><a href="https://oscaribv.github.io">Oscar Barragán</a></h1>
+
+<p>Ph.D. in Astrophysics</p>
+      <nav>
+        <ul class="list">
+
+            <li><a target="_blank" href="https://oscaribv.github.io/pages/about.html#about">ABOUT ME</a></li>
+            <li><a target="_blank" href="https://oscaribv.github.io/pages/codes.html#codes">Codes</a></li>
+            <li><a target="_blank" href="https://oscaribv.github.io/pages/contact.html#contact">Contact</a></li>
+            <li><a target="_blank" href="https://oscaribv.github.io/index.html#home">HOME</a></li>
+            <li><a target="_blank" href="https://oscaribv.github.io/pages/outreach.html#outreach">Outreach</a></li>
+            <li><a target="_blank" href="https://oscaribv.github.io/pages/projects.html#projects">Projects</a></li>
+
+            <li><a target="_blank" href="https://goo.gl/YAi4NV" >Publications</a></li>
+            <li><a target="_blank" href="https://orcid.org/0000-0003-0563-0493" >ORCID</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-twitter" href="http://twitter.com/oscaribv" target="_blank">
+            <i class="fab fa-twitter">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-github" href="http://github.com/oscaribv" target="_blank">
+            <i class="fab fa-github">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/oscaribv/" target="_blank">
+            <i class="fab fa-linkedin">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-flickr" href="https://www.flickr.com/photos/oscaribv/" target="_blank">
+            <i class="fab fa-flickr">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-instagram" href="https://www.instagram.com/oscaribv" target="_blank">
+            <i class="fab fa-instagram">
+            </i>
+          </a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://oscaribv.github.io">    Home
+</a>
+
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+          <div class="translations">
+    <a class="active" href="https://oscaribv.github.io/2017/test.html">en</a>
+        <a href="https://oscaribv.github.io/2017/test.html">en</a>
+    </div>
+
+    <h1 id="test">Test</h1>
+    <p>
+          Posted on Sat 02 December 2017 in <a href="https://oscaribv.github.io/category/tutorials.html">tutorials</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <h1>On Gaussian-Process</h1>
+<p>All starts with <em>Data</em>. A collection of observations/measurement of some observable that we want to describe with some model in order to infer physics. 
+In my case as an astronomer, I want to see if a given model predicts the observations that deny the inmutability of the sky. </p>
+<h2>Basics of data analysis</h2>
+<p>A typical (and well funded) approach is to assume that our data are <em>Gaussian distributed</em>.
+But what does this really mean? Here you can see an example of <em>Data</em>, some measurements <em>y</em> taken at different times <em>t</em>. Each datum <em>yi</em> has an asociated error bar <em>sigmai</em>. </p>
+<p>FIG</p>
+<p>When we say that our data is <em>Gaussian distributed</em>, we literally mean that each datum i is a <em>Gaussian distribution</em> (in the y-axis) with mean yi and standard deviation sigmai. Something like this</p>
+<p>FIG</p>
+<p>If I try to create a plot with a Gaussian for each datum that would be a mess. So I prefer to add an extra dimension to my plot. If we keep in our assumption that data are Gaussian distributed, or data set would look like something like this</p>
+<p>FIG</p>
+<p>Look again to the previous two plots. They look different, but they are exactly the same. We have time in one axis, our observable y in the other, and the Guassian behavior of our data expressed in two different ways: in the common approach where the Guassiasinity is implicitly represented by an error bar and this fancy 3D plot where Guassianity explicitly is a thing. </p>
+<p>We want to use these data to infer some physical properties, so what I do is to use some parametric model (i.e., some function that maps some parameters <em>x</em> at different times <em>t</em> into the quantites that I measured) and construct a model that describes better my data (more about this below).  </p>
+<p>In order to see if our model describes well our data, we need to learn how to compare them. 
+We cannot symply take the difference (fi -yi) between </p>
+<p>Look well that equation. Since the identity of our datum is not a point, but instead a Guassian, we need to compare with which probability or model explains the datum i. i
+And because the intrinsic property of the probabilities, we can compute the probability that our model explains the whole data setby multiplying each individual probability. <br>
+This probabilistic entity has the name of <em>Gaussian Likelihood</em>. And it tells you how well your model explains your (Gaussian distributed) data.</p>
+<p>The Guassian likelihood is well know in data analysis aproaches. You can find the best set of parameters that describe your model by maximasing it, or you can put it together to a set of Priors and make Bayesian inference, etc. The Gaussian likelihood is really fun. </p>
+<p>Now let us analyse with more detail the Gaussian likelihood behavior between two points yi and yj. </p>
+<p>But, what happens if there are correlations? Gaussian likelihood and bivariate Gaussian distribution.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://oscaribv.github.io/tag/tutorials.html">tutorials</a>
+      <a href="https://oscaribv.github.io/tag/gps.html">GPs</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; Oscar Barragán </p>
+<p>    Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Oscar Barragán's web page ",
+  "url" : "https://oscaribv.github.io",
+  "image": "",
+  "description": ""
+}
+</script>
+
+</body>
+</html>

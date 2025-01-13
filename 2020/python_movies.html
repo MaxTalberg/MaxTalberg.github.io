@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="../theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="../theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="../theme/pygments/vim.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/oscaribv/oscaribv.github.io/master/images/io.jpg" type="image/x-icon">
+  <link rel="icon" href="https://raw.githubusercontent.com/oscaribv/oscaribv.github.io/master/images/io.jpg" type="image/x-icon">
+
+
+
+
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Oscar Barragán" />
+<meta name="description" content="If well it is true that one image says more than one-thousand words, an animation can says a full story. For this reason, I have been including animations in all my outreach and scientific talks, going from planets moving in a simulated sky to a curve dancing through data to …" />
+<meta name="keywords" content="tutorials, python">
+
+
+  <meta property="og:site_name" content="Oscar Barragán's web page"/>
+  <meta property="og:title" content="Create animations with MoviePy"/>
+  <meta property="og:description" content="If well it is true that one image says more than one-thousand words, an animation can says a full story. For this reason, I have been including animations in all my outreach and scientific talks, going from planets moving in a simulated sky to a curve dancing through data to …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="../2020/python_movies.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2020-10-26 00:00:00+00:00"/>
+  <meta property="article:modified_time" content="2020-10-26 00:00:00+00:00"/>
+  <meta property="article:author" content="../author/oscar-barragan.html">
+  <meta property="article:section" content="tutorials"/>
+  <meta property="article:tag" content="tutorials"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="og:image" content="">
+
+  <title>Oscar Barragán's web page &ndash; Create animations with MoviePy</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="../">
+      <img src="../theme/img/profile.png" alt="Oscar Barragán" title="Oscar Barragán">
+    </a>
+
+    <h1>
+      <a href="../">Oscar Barragán</a>
+    </h1>
+
+    <p>Ph.D. in Astrophysics</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="../pages/about.html#about">
+                ABOUT ME
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/codes.html#codes">
+                Codes
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/contact.html#contact">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/welcome.html#welcome">
+                Welcome
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/observatories.html#observatories">
+                Observatories
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/outreach.html#outreach">
+                Outreach
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="../pages/projects.html#projects">
+                Projects
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="https://bit.ly/3uSSLO7" >Publications</a>
+          </li>
+          <li>
+            <a target="_self" href="https://orcid.org/0000-0003-0563-0493" >ORCID</a>
+          </li>
+          <li>
+            <a target="_self" href="https://oscaribv.github.io/tag/astroaventuras.html" >Astroaventuras</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-github"
+           href="http://github.com/oscaribv"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/oscaribv/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-flickr"
+           href="https://www.flickr.com/photos/oscaribv/"
+           target="_blank">
+          <i class="fa-brands fa-flickr"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="../">Home</a>
+
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="python_movies">Create animations with MoviePy</h1>
+    <p>
+      Posted on Mon 26 October 2020 in <a href="../category/tutorials.html">tutorials</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>If well it is true that one image says more than one-thousand words, an animation can says a full story. For this reason, I have been including animations in all my outreach and scientific talks, going from planets moving in a simulated sky to a curve dancing through data to the rhythm of Gaussian Processes.</p>
+<p>Recently, I found MoviePy, a Python library that can help us to create such animations. MoviePy is a library that allows performing video editing. I will not focus on all of its particularities, but on the one that helps us to create animations (gifs or mp4) from a set of png images.</p>
+<p>In this post, I show a tutorial on how to create a sequence of png images, and how to use MoviePy to combine them in an animation. If you are only interested in the magic commands to create the animation inside python, go directly here. You can also find a jupyter notebook version of this tutorial here. </p>
+<h4>Creating a sequence of png images</h4>
+<p>Let us say that we want to animate some RV model passing through RV data. In this example, we will create the data that we will animate, but keep in mind that in real life, these data would come from our favourite spectrograph and our RV model from some fancy data analysis.</p>
+<p>First, let us create a function to compute the RV curve of a planet in a circular orbit</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#Load libraries</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1">#Let us write a function to compute RV for a circular orbit</span>
+<span class="c1">#input parameters are time t (vector with N elements)</span>
+<span class="c1">#and the model parameters</span>
+<span class="c1">#in this case</span>
+<span class="c1">#params[0] -&gt; vz -&gt; Systemic velocity of the star</span>
+<span class="c1">#params[1] -&gt; K  -&gt; Doppler semi-amplitude</span>
+<span class="c1">#params[2] -&gt; P  -&gt; Orbital period</span>
+<span class="c1">#params[3] -&gt; T0 -&gt; time of minimum conjunction </span>
+<span class="c1">#This function returns a vector (N elements) of RVs at the times t</span>
+<span class="k">def</span> <span class="nf">calcula_RV</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">params</span><span class="p">):</span>
+    <span class="n">vz</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">K</span>  <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">P</span>  <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">t0</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">vr</span> <span class="o">=</span> <span class="n">vz</span> <span class="o">-</span> <span class="n">K</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">t</span><span class="o">-</span><span class="n">t0</span><span class="p">)</span><span class="o">/</span><span class="n">P</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">vr</span>
+</code></pre></div>
+
+<p>Now it is time to give some values to the variables (the values that I use are random, feel free to change it to match your favourite RV exoplanet)</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#let us create a time vector between 0 and 10 days with a point each 0.1 days</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="c1">#Let us give some values for the 4 parameters that define the RV of a circular orbit</span>
+<span class="n">vz</span> <span class="o">=</span> <span class="mi">40</span> <span class="c1">#km/s</span>
+<span class="n">K</span> <span class="o">=</span> <span class="mf">0.05</span><span class="c1">#km/s</span>
+<span class="n">P</span> <span class="o">=</span> <span class="mi">2</span>   <span class="c1">#days</span>
+<span class="n">t0</span> <span class="o">=</span> <span class="mi">13</span> <span class="c1">#days</span>
+
+<span class="c1">#Let us call the function to estimate the RV for a circular orbit</span>
+<span class="n">rv</span> <span class="o">=</span> <span class="n">calcula_RV</span><span class="p">(</span><span class="n">t</span><span class="p">,[</span><span class="n">vz</span><span class="p">,</span><span class="n">K</span><span class="p">,</span><span class="n">P</span><span class="p">,</span><span class="n">t0</span><span class="p">])</span>
+</code></pre></div>
+
+<p>Now we can create some simulated data by adding some white noise to the previously computed RVs</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#Let us create an error bar of 5 m/s</span>
+<span class="n">rv_err</span> <span class="o">=</span> <span class="mf">5e-3</span>
+<span class="c1">#Create RV data</span>
+<span class="n">rv_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">rv</span><span class="p">,</span><span class="n">rv_err</span><span class="p">)</span>
+<span class="c1">#Let us plot the model and the data together</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">rv</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">rv_data</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>you should have a plot similar to this one</p>
+<p><center>
+<img src="https://splox.net/wp-content/uploads/2020/06/rv_00099-1024x526.png" alt="Simulated data"/>
+</center></p>
+<p>At this point, we have two arrays: rv_data that contains some simulated data points, and rv that contains the model used to create data. We are now ready to create our animation, we want to plot our data and show how the model is appearing slowly following the data.</p>
+<p>First, let us create a routine to create a generic plot with model and data</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#Let us create a function to create a plot</span>
+<span class="c1">#tmodel -&gt; time-stamps of the model</span>
+<span class="c1">#model  -&gt; model values corresponding to tmodel</span>
+<span class="c1">#tdata  -&gt; time-stamps of the data</span>
+<span class="c1">#data   -&gt; model values corresponding to tdata</span>
+<span class="c1">#fname  -&gt; name of the output file</span>
+<span class="k">def</span> <span class="nf">plot_data</span><span class="p">(</span><span class="n">tmodel</span><span class="p">,</span><span class="n">model</span><span class="p">,</span><span class="n">tdata</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="n">fname</span><span class="p">):</span>
+    <span class="c1">#This is exactly a matplotlib plotting routine </span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time (days)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;RV (km/s)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tmodel</span><span class="p">,</span><span class="n">model</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tdata</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span><span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>We can call the plot_data routine inside a for-cycle where we can modify the model to plot at each iteration, in such a way that each new image will show an increasing section of the model. Such for-cycle would look like this</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#create a cycle that creates our plots</span>
+<span class="c1">#In this case, each plot will show all the data and the model will appear one step each time</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+    <span class="c1">#Create the filename automatically</span>
+    <span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;rv_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.png&#39;</span>
+    <span class="c1">#Create the plot, note how each iteration we plot the first i elements of the model</span>
+    <span class="n">plot_data</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="n">i</span><span class="p">],</span><span class="n">rv</span><span class="p">[:</span><span class="n">i</span><span class="p">],</span><span class="n">t</span><span class="p">,</span><span class="n">rv_data</span><span class="p">,</span><span class="n">fname</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+
+<p>The previous for-cycle will create a series of png images named 'rv_000XX.png', where XX goes from 0 to 99. I would encourage to use ascending numbers similar to this since this will help to identify the correct sequence of the images as shown below.</p>
+<h4>Creating your animation</h4>
+<p>At this point, you should be in a directory with a bunch of png images that you want to use to create an animation. Rather the images created using this tutorial or your own png images. </p>
+<p>To create our animation we use just a few lines of code</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#Load libraries</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">moviepy.editor</span> <span class="k">as</span> <span class="nn">mpy</span>
+
+<span class="c1">#name of the animation</span>
+<span class="n">gif_name</span> <span class="o">=</span> <span class="s1">&#39;rv_animation&#39;</span>
+
+<span class="c1">#frames per second</span>
+<span class="n">fps</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="c1">#Create a sorted list with all the png files in our directory</span>
+<span class="n">file_list</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*.png&#39;</span><span class="p">))</span> 
+
+<span class="c1">#Create a clip instance using ImageSequenceClip included in moviepy</span>
+<span class="n">clip</span> <span class="o">=</span> <span class="n">mpy</span><span class="o">.</span><span class="n">ImageSequenceClip</span><span class="p">(</span><span class="n">file_list</span><span class="p">,</span> <span class="n">fps</span><span class="o">=</span><span class="n">fps</span><span class="p">)</span>
+
+<span class="c1">#No we can write the animation as a a gif</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">write_gif</span><span class="p">(</span><span class="n">gif_name</span><span class="o">+</span><span class="s1">&#39;.gif&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>You should see some progress bar and after that a message saying that your gif animation is ready. You can also change the last line to create an mp4 file </p>
+<div class="highlight"><pre><span></span><code><span class="c1">#No we can write the animation as a a mp4</span>
+<span class="n">clip</span><span class="o">.</span><span class="n">write_videofile</span><span class="p">(</span><span class="n">gif_name</span><span class="o">+</span><span class="s1">&#39;.mp4&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>You should have an animation like the one below</p>
+<p><center>
+<img src="https://splox.net/wp-content/uploads/2020/06/rv_animation.gif" alt="Dancing data"/>
+</center></p>
+<p>Of course, this is just a basic example, but you can use it to create some other animations, such as:</p>
+<p>Planets transiting a star</p>
+<p><center>
+<img src="https://raw.githubusercontent.com/oscaribv/oscaribv.github.io/master/images/basics_gifs/transit.gif" alt="Dancing data"/>
+</center></p>
+<p>or, as mentioned in the introduction of this post, curves dancing through data to the rhythm of Gaussian Processes</p>
+<p><center>
+<img src="https://raw.githubusercontent.com/oscaribv/oscaribv.github.io/master/images/K2-100/GPs.gif"/>
+</center></p>
+<p>and so on, now the limit is your imagination! I hope you find this post useful to animate data to explain a Universe that is intrinsically dynamic.</p>
+<h4>This blog post was first posted in <a href="https://splox.net/resources/create-animations-with-moviepy/">https://splox.net/resources/create-animations-with-moviepy/</a></h4>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="../tag/tutorials.html">tutorials</a>
+      <a href="../tag/python.html">python</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  Oscar Barragán</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="../theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Oscar Barragán's web page ",
+  "url" : "..",
+  "image": "",
+  "description": ""
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Oscar Barragán's web page</title><link href="https://oscaribv.github.io/" rel="alternate"></link><link href="https://oscaribv.github.io/feeds/all.atom.xml" rel="self"></link><id>https://oscaribv.github.io/</id><updated>2019-06-30T00:00:00+02:00</updated><subtitle>Ph.D. in Astrophysics</subtitle><entry><title>La caza de exoplanetas: el método de Velocidad Radial</title><link href="https://oscaribv.github.io/caza-de-exoplanetas-es.html" rel="alternate"></link><published>2019-05-17T00:00:00+02:00</published><updated>2019-06-30T00:00:00+02:00</updated><author><name>Oscar Barragán</name></author><id>tag:oscaribv.github.io,2019-05-17:/caza-de-exoplanetas-es.html</id><summary type="html">&lt;p&gt;La noche ha llegado finalmente al observatorio del Roque de los Muchachos. 
+El cielo azul se ha transformado en un océano de estrellas que roba la belleza a un horizonte tapizado de nubes. 
+Los telescopios están listos para cazar fotones. A primera vista, las estrellas parecen estáticas en un cielo …&lt;/p&gt;</summary><content type="html">&lt;p&gt;La noche ha llegado finalmente al observatorio del Roque de los Muchachos. 
+El cielo azul se ha transformado en un océano de estrellas que roba la belleza a un horizonte tapizado de nubes. 
+Los telescopios están listos para cazar fotones. A primera vista, las estrellas parecen estáticas en un cielo oscuro 
+que es víctima de la rotación de la Tierra. Sin embargo, todas las estrellas que iluminan nuestra noche se mueven 
+dentro de nuestra galaxia, la Vía Láctea. Nuestra misión aquí es detectar esos movimientos, que nos pueden indicar 
+la presencia de mundos lejanos. &lt;/p&gt;
+&lt;p&gt;La naturaleza del movimiento de las estrellas se manifiesta en dos formas. Primero, el movimiento de las estrellas 
+en el plano del cielo, llamado movimiento propio, que lentamente va transformando las constelaciones. 
+Y segundo el movimiento de las estrellas con respecto a nosotros, su velocidad de alejamiento o acercamiento, 
+llamada también &lt;strong&gt;velocidad radial&lt;/strong&gt;. Esta es la cantidad que nos encargamos de medir aquí en el observatorio. 
+Desafortunadamente, el movimiento de las estrellas es imperceptible a nuestros ojos. Es por eso que requerimos grandes 
+telescopios y sobre todo, instrumentos de alta precisión. Y es por esa razón que estamos aquí en el observatorio. &lt;/p&gt;
+&lt;p&gt;Todos nosotros estamos familiarizados con el &lt;strong&gt;efecto Doppler&lt;/strong&gt;, al menos con su versión acústica. 
+El sonido cambia por el hecho de que un auto se acerca o se aleja a nosotros. Ya que las ondas sonoras se comprimen o 
+estiran dependiendo de la velocidad del auto. La luz es también una onda, y el efecto Doppler se manifiesta como un cambio de color. 
+Un objeto astronómico parece más rojo cuando se aleja y más azul cuando se acerca. 
+Afortunadamente, los astrónomos tenemos espectrógrafos, que nos ayudan a medir estos cambios de color. 
+Estos instrumentos generan un espectro, que es una separación de colores que contiene la huella digital 
+característica de cada estrella. Esta colorida descomposición de luz -que es llamado espectro- luce come un arcoiris con 
+unas extrañas líneas oscuras. Estas líneas oscuras son causados por elementos en la atmósfera estelar, 
+que absorben colores específicos que los hacen cuánticamente felices. Esto ha sido utilizado desde hace cientos 
+de años para saber la composición de las estrellas. Pero también, la posición de estas líneas nos ayuda a 
+medir el efecto Doppler, y así la velocidad radial de las estrellas. Cambios en esta velocidad nos sirve a 
+los astrónomos para detectar exoplanetas.&lt;/p&gt;
+&lt;p&gt;Podemos imaginar un planeta orbitando una estrella lejana como un tango gravitacional en el que uno de los bailarines es invisible. 
+Pero al analizar los movimientos del bailarín que podemos ver, es posible reconstruir el baile, 
+saber la canción e incluso saber la naturaleza del compañero. Nosotros, los cazadores de exoplanetas, 
+buscamos por cambios periódicos de colores en la estrella. Pulsaciones entre el azul y el rojo que pueden durar desde días hasta años. 
+Estos cambios nos indican un cambio de velocidad en la estrella, causados por un planeta que perturba el baile de la 
+estrella alrededor de la galaxia que nos perpleja esa noche. &lt;/p&gt;
+&lt;p&gt;Al detectar estas pulsaciones en velocidad radial de las estrellas también podemos tener una idea sobre la masa mínima del planeta. 
+Y así saber si el planeta es masivo como Júpiter, o relativamente ligero como la Tierra. 
+El problema es que los cambios de velocidades son relativamente pequeños. Júpiter genera un tambaleo de apenas 13 m/s en
+ el Sol en 12 años, mientras que la Tierra genera uno de apenas 9 cm/s cada año. Por lo cual, requerimos instrumentos de última 
+ generación para poder observar planetas bamboleando a sus estrellas.&lt;/p&gt;
+&lt;p&gt;Nosotros nos encontramos ahora en el Telescopio Nazionale Galileo, que tiene al instrumento cazador de exoplanetas por 
+excelencia en el hemisferio norte: HARPS-N. HARPS-N es una copia de HARPS (High Accuracy Radial Velocity Planet 
+Searcher, por sus siglas en inglés), que se encuentra en el observatorio de La Silla, en el hemisferio sur. 
+Estos instrumentos permiten medir la velocidad de las estrellas con una precisión promedio de 1 metro por segundo, 
+que es equivalente al gatear de un bebé. Esta vez estamos midiendo masas de planetas descubiertos por el telescopio 
+espacial Kepler, el predecesor de TESS. Al combinar las medidas de velocidad radial con los planetas transitantes, 
+somos capaces de medir la masa real del planeta y tener una aproximación de su composición. 
+Qué es el primer paso para saber si un planeta es habitable o no. Quizá la próxima vez que estemos aquí, 
+estaremos midiendo la masa de uno de los planetas descubiertos por ti en Planet Hunters.&lt;/p&gt;
+&lt;p&gt;Como un capricho de simetría, el fin de la noche es anunciado en el horizonte con los mismos colores que su inicio 9 horas atrás. 
+Tiempo de cerrar el telescopio antes de que el Sol regrese al protagonismo de un cielo azul. Nosotros dejamos el telescopio 
+después de haber medido decenas de velocidades. Cada dato tomado con el telescopio nos ayuda a descifrar, paso a paso, 
+la coreografía gravitacional que nos develará la existencia de mundos lejanos.&lt;/p&gt;
+&lt;p&gt;Este post fue publicado por primera vez en &lt;a href="https://astronomiadivertida.wordpress.com/2019/05/17/la-caza-de-exoplanetas-el-metodo-de-velocidad-radial/"&gt;Astronomía Divertida&lt;/a&gt; 
+el 17-05-2019.
+Esta entrada de blog también aparece en inglés en &lt;a href="https://blog.planethunters.org"&gt;PlanetHunters&lt;/a&gt;.&lt;/p&gt;</content><category term="astroaventuras"></category></entry><entry><title>Una ley de herodes astronómica</title><link href="https://oscaribv.github.io/ley-de-herodes-es.html" rel="alternate"></link><published>2018-05-18T00:00:00+02:00</published><updated>2019-06-30T00:00:00+02:00</updated><author><name>Oscar Barragán</name></author><id>tag:oscaribv.github.io,2018-05-18:/ley-de-herodes-es.html</id><summary type="html">&lt;p&gt;Este relato se centra en que las cosas no son siempre fáciles para los astrónomos. 
+Algunas veces tenemos que pasar frío, desveladas, y todo para que el clima no coopere. 
+De aquí el título de esta entrada, recordando uno de mis coleciones de relatos favoritos de Ibargüengoitia, "La ley de …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Este relato se centra en que las cosas no son siempre fáciles para los astrónomos. 
+Algunas veces tenemos que pasar frío, desveladas, y todo para que el clima no coopere. 
+De aquí el título de esta entrada, recordando uno de mis coleciones de relatos favoritos de Ibargüengoitia, "La ley de Herodes". 
+Esta frase viene de un proverbio mexicano que no escribiré aquí por cuestión de principios, 
+pero la idea es que al final las cosas no siempre salen como uno quisiera.&lt;/p&gt;
+&lt;p&gt;Era enero del 2018, yo regresaba a Turín después de unas vacaciones que había pasado en México. 
+Pasé de disfrutar de un invierno cálido dentro del trópico a los hermosos paisajes de los Alpes nevados en invierno. 
+Yo tenía mucho frío. Pero estaba contento porque a final de mes iría a las paradisiacas Islas Canarias de visita y a 
+realizar observaciones con el Telescopio Nórdico Óptico, en La Palma. 
+El tiempo pasó, y ya en Tenerife disfruté de papas con mojo y tomé muchos barraquitos hasta que llegó el día de ir al observatorio.&lt;/p&gt;
+&lt;p&gt;Mi amigo y colega Jorge y yo teníamos dos noches de observación en el telescopio. 
+Nos creíamos con suerte, porque días antes hubo una tormenta invernal con mucha nieve que ya había desaparecido. 
+Conforme íbamos subiendo la montaña, un cielo azul nos daba la bienvenida al observatorio. 
+Al acercarnos a nuestro destino, los rastros de la tormenta eran evidentes. 
+Ya que el cielo azul nos recibió con telescopios congelados. 
+La belleza del paisaje no alcanzaba para sanar nuestra decepción al enterarnos que los telescopios no se podían mover por el hielo. 
+Nuestra esperanza era que unos rayos de Sol debilitados por el invierno derritieran ese hielo, lo cual no sucedió.&lt;/p&gt;
+&lt;p&gt;Llegó la noche, despejada, pero sin observaciones. 
+Es en ese momento cuando los astrónomos de corazón decidimos que el hielo no puede congelar nuestros sueños de descubrir exoplanetas. 
+Esa noche fuimos a dormir temprano, después de haber madurado la loca idea que la mañana siguiente romperíamos ese hielo sea como sea. 
+Un Sol radiante al amanecer marcó el comienzo del hito que fue tallado con picos y palas. 
+Y como seguro están imaginando ahora, el ímpetu duró muy poco. Romper placas de hielo no es nada fácil. 
+Estábamos cansados y aún faltaba descongelar el 80 por ciento del telescopio. Menos mal llegaron refuerzos a ayudarnos. 
+Cuando habíamos removido suficiente hielo, movimos un poco el telescopio y eso nos motivó a todos a terminar la hazaña. 
+Al final, cuando la labor estuvo culminada, era un hecho que podríamos observar esa noche.&lt;/p&gt;
+&lt;p&gt;Después de una rica cena, fuimos al telescopio, lo encendimos, y todo funcionaba a la perfección. 
+Comenzamos a hacer las calibraciones necesarias previas a las observaciones mientras bromeabamos sobre como pintarían murales 
+de la epopeya de unos astrónomos descongelando un telescopio por el puro amor a la ciencia. 
+&lt;strong&gt;Sobre como una pequeña limitación en este planeta no iba a detenernos de encontrar otros&lt;/strong&gt;. 
+Fue cuando de pronto el detector de humedad se disparó, indicando que una nube se había estacionado en el observatorio. 
+Cuando el pronóstico del clima nos decía que la nube pasaría la noche ahí, 
+el hielo que regresaba a reclamar su telescopio nos indicó que debíamos ir a dormir, sin datos, sin exoplanetas y además cansados.&lt;/p&gt;
+&lt;p&gt;Nota: Menos mal Jorge y yo logramos escapar al día siguiente, la susodicha nube se quedó estacionada una semana en la montaña 
+dejando una tormenta con mucho más hielo del que vimos al llegar. Cuando nos dimos cuenta de esto mientras bebiamos vino 
+en un guachinche en Tenerife, en ese momento, nos sentimos afortunados.&lt;/p&gt;
+&lt;p&gt;Este post fue publicado por primera vez en &lt;a href="https://astronomiadivertida.wordpress.com/2018/05/29/una-ley-de-herodes-astronomica/"&gt;Astronomía Divertida&lt;/a&gt; 
+el 18-05-2018.&lt;/p&gt;</content><category term="astroaventuras"></category></entry><entry><title>El astrónomo niño</title><link href="https://oscaribv.github.io/astronomo-nino-es.html" rel="alternate"></link><published>2018-05-02T00:00:00+02:00</published><updated>2019-06-30T00:00:00+02:00</updated><author><name>Oscar Barragán</name></author><id>tag:oscaribv.github.io,2018-05-02:/astronomo-nino-es.html</id><summary type="html">&lt;p&gt;En estos días he estado muy estresado debido a que he tenido que enviar resultados a colaboradores, 
+estoy escribiendo mi tesis doctoral, he tenido que viajar mucho, aplicaciones a postdocs y demás cosas dignas de un astrónomo moderno. 
+Estoy seguro que si regresara en el tiempo y le dijera al …&lt;/p&gt;</summary><content type="html">&lt;p&gt;En estos días he estado muy estresado debido a que he tenido que enviar resultados a colaboradores, 
+estoy escribiendo mi tesis doctoral, he tenido que viajar mucho, aplicaciones a postdocs y demás cosas dignas de un astrónomo moderno. 
+Estoy seguro que si regresara en el tiempo y le dijera al yo más joven todo el estrés que conlleva el estudiar las estrellas, 
+lo hubiera pensado dos veces. Justo eso me hizo pensar en el yo de diez años que preguntaba a sus padres "¿Qué son las estrellas?". 
+Y jamás obtuve una respuesta que silenciara esa curiosidad en mi. Pero siendo sinceros, si regresara en el tiempo yo le contaría al 
+yo más joven el relato que les contaré a continuación.&lt;/p&gt;
+&lt;p&gt;Recuerdo muy bien una experiencia que tuve en abril del 2016 en el observatorio La Silla, en Chile. 
+Esta era la primera vez que me tocaba ir a un observatorio profesional a observar solo. 
+Y tengo que admitir que estaba bastante nervioso, iba a usar nada y más nada menos que el instrumento cazador de planetas por
+excelencia en la Tierra, el espectrógrafo HARPS. Al final todo salió bien, logré observar las estrellas que tenían candidatos
+a exoplanetas y los resultados parecían prometedores. Pasé una noche más en el observatorio después de mi primera experiencia 
+científica y ese día se habló de la posibilidad de yo liderar mi primer artículo de descubrimiento. Mi relato se centra en esa 
+noche extra en el observatorio.&lt;/p&gt;
+&lt;p&gt;Decidí pasar esa noche observando el cielo, pero esta vez sin telescopio profesional, sino con mis propios ojos. 
+Yo estaba maravillado por lo que podía ver, era la primera vez que estaba en el hemisferio sur y me daba mucha impresión ver 
+el cielo al revés. Además de haber podido ver las Nubes de Magallanes y la Cruz del Sur con mis propios ojos. 
+Me recosté en el suelo en un lugar donde estaría solo, tomé mi celular y puse uno de mis discos favoritos, 
+"Wish you were here" de Pink Floyd. Entonces comencé a contemplar el cielo. Al ritmo de "Shine on your crazy diamond" 
+mis ojos se acostumbraban más y más a la oscuridad. Cada acorde de guitarra agregaba estrellas a la Vía Láctea. 
+A mitad de la canción, era capaz de distinguir detalles de la galaxia que jamás había visto antes. 
+Al final de la canción, mis ojos estaban tan acostumbrados a la oscuridad que había un sin fin de estrellas en el cielo, 
+las constelaciones habían desaparecido y tenía todavía media hora más de música para escuchar. Justo cuando comenzaba la canción 
+"Welcome to the machine" (que es la que menos me gusta de ese disco), comencé a pensar que yo no estaba en ese lugar 
+para escribir artículos científicos, o ir a conferencias, ni para escribir códigos que automatizaran los resultados 
+de los astrónomos. Yo estaba ahí como un niño caprichoso que busca la respuesta a una pregunta que jamás le habían respondido 
+satisfactoriamente.&lt;/p&gt;
+&lt;p&gt;Y recuerdo que esa noche, al terminar la última tonada del disco me quedé un poco más de tiempo pensando a solas en la oscuridad. 
+&lt;strong&gt;Me di cuenta el porque decidí ser astrónomo, ya que mientras hay gente que hace astronomía por sentirse más grande, 
+yo lo hago para sentirme niño&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Este post fue publicado por primera vez en &lt;a href="https://astronomiadivertida.wordpress.com/2018/05/01/el-astronomo-nino"&gt;Astronomía Divertida&lt;/a&gt; 
+el 01-05-2018.&lt;/p&gt;</content><category term="astroaventuras"></category></entry><entry><title>Test</title><link href="https://oscaribv.github.io/2017/test.html" rel="alternate"></link><published>2017-12-02T00:00:00+01:00</published><updated>2019-06-30T00:00:00+02:00</updated><author><name>Oscar Barragán</name></author><id>tag:oscaribv.github.io,2017-12-02:/2017/test.html</id><summary type="html"></summary><content type="html"></content><category term="tutorials"></category><category term="test"></category></entry></feed>
