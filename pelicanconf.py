@@ -43,4 +43,4 @@ DEFAULT_PAGINATION = False
 # RELATIVE_URLS = True
 
 # Theme
-THEME = 'themes/flex'
+THEME = '/Users/maxtalberg/pelican-themes/Flex'
