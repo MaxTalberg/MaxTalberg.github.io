@@ -149,8 +149,8 @@
 [submodule "cid"]
 	path = cid
 	url = https://github.com/hdra/Pelican-Cid.git
-[submodule "Flex"]
-	path = Flex
+[submodule "themes/Flex"]
+	path = themes/Flex
 	url = https://github.com/alexandrevicenzi/Flex.git
 [submodule "octopress"]
 	path = octopress
