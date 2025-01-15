@@ -113,7 +113,7 @@
     <ul class="social">
       <li>
         <a class="sc-github"
-           href="https://github.com/MaxTalberg""
+           href="https://github.com/MaxTalberg"
            target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
@@ -133,7 +133,7 @@
 
   
   <nav>
-    <a href="./">Home</a>
+    <a href="../">Home</a>
     <a href="./pages/contact.html">Contact</a>
     <a href="./pages.random.html">Random</a>
   </nav>
@@ -144,199 +144,74 @@
     <h1 id="about">ABOUT ME</h1>
   </header>
   <div>
-<h2>POSITIONS</h2>
-<h4>Warwick Prize Fellowhip</h4>
-<ul>
-<li>Jun. 2024 - Present</li>
-<li><a href="https://warwick.ac.uk/fac/sci/physics/research/astro/">Department of Physics, University of Warwick</a>, UK.</li>
-</ul>
-<h4>PDRA in High Precision Radial Velocity</h4>
-<ul>
-<li>Jan. 2021 - Present</li>
-<li><a href="https://www2.physics.ox.ac.uk/contacts/people/barragan">Department of Physics, University of Oxford</a>, UK.</li>
-</ul>
-<h4>Dennis Sciama non-stipendiary Junior Research Fellowship</h4>
-<ul>
-<li>Jan. 2022 - Dec. 2023</li>
-<li><a href="https://www.wolfson.ox.ac.uk/">Wolfson college, University of Oxford</a>, UK.</li>
-</ul>
-<h4>PDRA in exoplanet discovery with the PLATO mission</h4>
-<ul>
-<li>Jan. 2019 - Jan. 2021</li>
-<li><a href="https://www2.physics.ox.ac.uk/contacts/people/barragan">Department of Physics, University of Oxford</a>, UK.</li>
-</ul>
-<h2>SCIENTIFIC INTERESTS</h2>
-<ul>
-<li>Exoplanets</li>
-<li>Planets detection</li>
-<li>Transiting planets</li>
-<li>High-precision spectroscopy</li>
-<li>Gaussian Processes</li>
-<li>Bayesian data analysis</li>
-<li>Numerical astrophysics</li>
-<li>Hydrodinamical simulations</li>
-</ul>
-<h2>PUBLICATIONS</h2>
-<p>I am first author of ten papers in peer-review journals, they are described briefly here:</p>
-<ul>
-<li><strong>TOI-837</strong> is a 35-million-year star hosting the transiting exoplanet TOI-837b, with an 8.32-day orbital period. We determined that TOI-837b has a 
-  radius of 0.82 Jupiter radii. We obtained an unexpected Doppler semi-amplitude of 35 m/s, indicating a planetary mass of 0.39 Jupiter masses. 
-  Our findings suggest TOI-837b has a substantial core of about 70 Earth masses, constituting approximately 60% of its total mass, challenging existing core formation models. 
-  Learn more about this story and how to be sure that your Gaussian Process is not overfitting at <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413750B/abstract"><strong>Barragán</strong> et al., 2024, MNRAS, in press.</a>.</li>
-<li><strong>REPUBLIC</strong> corrects systematics that vary between cameras while preserving true stellar signals common to all cameras.
-  Drawing a parallel to the philosopher Plato, who sought to uncover underlying truths, REPUBLIC aims to reveal genuine astrophysical signals obscured by instrumental noise. 
-  This algorithm, like Plato’s inquiries, distinguishes reality from distortion, representing a significant advancement in stellar signal extraction. 
-  REPUBLIC has the potential to complement existing correction strategies for multi-camera surveys, pending further validation with PLATO mission data. 
-  See all the elegant maths in <a href="https://ui.adsabs.harvard.edu/abs/2024RASTI...3..198B/abstract"><strong>Barragán</strong>, Aigrain and McCormac, 2024, RASTI, 3, 198</a>.</li>
-<li><strong>K2-233</strong>. By reanalyzing HARPS data of K2-233, which hosts three transiting planets, I applied a multidimensional Gaussian process regression 
-  to both radial velocity and activity indicators. This approach significantly improved the precision of the planetary signal measurements. 
-  I found new mass estimates for K2-233 b, c, and d to be 2.4, 4.6, and 10.3 Earth masses, respectively. These findings make K2-233 d an exciting target for transmission spectroscopy with the JWST. 
-  K2-233's system, with two inner planets below the radius valley and one outer planet above it, provides an excellent case for comparative studies on planet formation, migration, and atmospheric evolution. 
-  <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.3458B/abstract"><strong>Barragán</strong> et al., 2023, MNRAS, 522, 3458</a>.</li>
-<li><a href="https://oscaribv.github.io/2021/hd73583.html"><strong>HD 73583 (a.k.a TOI-560)</strong></a> is young (~750 Myr) planetary system 
-  containing two transiting mini-Neptunes with radii of 2.8 and 2.4 R_Earth
-  for HD 73583 b and c, respectively. We measured masses the mases to be 10 M_Earth for both planets.
-  The density ratio of both planets is unexpected in a photoevaporation scenario. This makes this system 
-  challenging for theorists and observers who have to search  for atmospheric-loss signatures. If you want
-  to know all the details about this interesting young system, check this post and
-  <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv211013069B/abstract"><strong>Barragán et al., 2022, MNRAS, 514, 1606</strong></a>.</li>
-<li><a href="https://github.com/oscaribv/pyaneti"><strong>pyaneti II</strong></a> is an extension to the original pyaneti code. It has
-  the same capabilities as pyaneti, but this new version has several improvements. 
-  This new release has a special emphasis on the modelling of stellar signals in radial velocity 
-  time-series. The code has a built-in multi-dimensional Gaussian process approach to modelling radial 
-  velocity and activity indicator time-series with different underlying covariance functions. 
-  If you want to learn more about the black magic in this code go and see 
-  <a href="https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stab2889/6383008"><strong>Barragán</strong>, Aigrain, Rajpaul and Zicher, 2022, MNRAS, 509, 866</a>.</li>
-<li><a href="https://oscaribv.github.io/2019/k2100.html#k2100"><strong>K2-100b</strong></a> is a 3.8 R_Earth planet transiting a star member of the young Praesepe cluster (700–800 Myr) each 1.67 days. 
-  We performed a detailed analysis of HARPS-N radial velocity observations and we detected the planet signal in the activity-dominated radial velocity timeseries of the star.
-  This is the first mass measurement for a transiting planet in a young open cluster. Its atmosphere is currently evaporating, 
-  this puffy young planet that will teach us a lot about photoevaporation. 
-  Learn more about this interesting system in this <a href="https://oscaribv.github.io/2019/k2100.html#k2100">blog</a> 
-  or go directly to check <a href="https://arxiv.org/abs/1909.05252"><strong>Barragán</strong> et al., 2019, MNRAS, 490, 698</a>.</li>
-<li><a href="https://github.com/oscaribv/pyaneti"><strong>pyaneti</strong></a> is a multi-planet radial velocity and transit fit software. 
-  The code uses Markov chain Monte Carlo (MCMC) methods with a Bayesian approach and a parallelized ensemble sampler 
-  algorithm in Fortran which makes the code fast. It creates posteriors, correlations, and ready-to-publish plots automatically, 
-  and handles circular and eccentric orbits. It is capable of multi-planet fitting and handles stellar limb darkening, 
-  systemic velocities for multiple instruments, and short and long cadence data, and offers additional capabilities.
-  Learn more about this awesome, fast and totally open source code in 
-  <a href="https://academic.oup.com/mnras/article-abstract/482/1/1017/5094600"><strong>Barragán</strong>, Gandolfi, and Antoniciello, 2019, MNRAS, 482, 1017</a>.</li>
-<li><strong>K2-141 b</strong> is a rocky planet which orbit its star each 6.7 hours! This Ultra-Short-Period (Period shorter than 1 days) Super-Earth
-  is the shortest-period planet known to date with a precisely determined mass. 
-  Learn more about this planet in <a href="https://www.aanda.org/10.1051/0004-6361/201732217"><strong>Barragán</strong> et al., 2017, A&amp;A, 612, A95</a>.</li>
-<li><strong>K2-139 b</strong> is a planet with a size similar to Jupiter, but with a third
-  of the Jupiter mmass. This buddy orbits its star each 29 days!
-  You can find the technical details in <a href="https://academic.oup.com/mnras/article/475/2/1765/4739349"><strong>Barragán</strong> et al., 2017, MNRAS, 475, 175</a></li>
-<li><strong>K2-98 b</strong> is a Neptune-size planet with a density similar to Neptune.
-  The planet orbits its star each 10 days. We calculated that the planet will be engulfed by its host star in 3 Gyr.
-  The discovery is reported in <a href="http://iopscience.iop.org/article/10.3847/0004-6256/152/6/193/meta"><strong>Barragán</strong> et al., 2016, AJ, 152, 193</a></li>
-</ul>
-<p>I am coauthor of tens of peer-review papers with more exciting exoplanet related discoveries. You can find my whole list of my publications 
-<a href="https://bit.ly/3uSSLO7">here</a>.</p>
-<h2>EDUCATION</h2>
-<h4>Dottorato in Fisica e Astrofisica - Ph.D. in Physics and Astrophysics</h4>
-<ul>
-<li>October 2015 - October 2018</li>
-<li>Department of Physics, University of Torino (Italy)</li>
-<li>Thesis: <a href="https://zenodo.org/record/2592750">Unveiling the Nature of Faraway Worlds: Intensive Characterisation of <em>K2</em> transiting exoplanets</a></li>
-<li>Degree obtained with <em>Lode</em></li>
-</ul>
-<h4>Maestría en Ciencias (Astrofísica) - M.Sc. in Astrophysics</h4>
-<ul>
-<li>August 2013 - August 2015 </li>
-<li>Department of Astronomy, University of Guanajuato (Mexico)</li>
-<li>Thesis: <a href="https://www.researchgate.net/publication/281461299_On_the_stability_of_circumplanetary_disks">On the stability of circumplanetary disks</a></li>
-<li>Degree obtained with <em>Cum Laude</em></li>
-<li>General Grade: 9.85/10 </li>
-</ul>
-<h4>Licenciatura en Física - B.Sc. in Physics</h4>
-<ul>
-<li>August 2008 - December 2013</li>
-<li>Department of Physics, University of Guanajuato (Mexico) </li>
-<li>Thesis (spanish): <a href="https://www.researchgate.net/publication/265510224_Simulacion_de_Chorros_Relativistas_Extragalacticos_usando_codigo_de_Magnetohidrodinamica_en_Relatividad_General">Simulation of extragalactic relativistic jets using a magnetohydrodynamical code in general relativity</a></li>
-<li>Degree with <em>Distinction</em></li>
-<li>General Grade: 9.1/10</li>
-</ul>
-<h2>REFEREE SERVICES</h2>
-<p>I have been refereed in the following journals and review cometees: </p>
-<ul>
-<li>Nature Astronomy (Nat. Astron.).</li>
-<li>The Astronomical Journal (AJ).</li>
-<li>Astronomy &amp; Astrophysics (A&amp;A) and  Astronomy &amp; Astrophysics  Letters (A&amp;AL)</li>
-<li>Montly Notices of the Royal Astronomy Society (MNRAS).</li>
-<li>Internal reviewer of PLATO on-ground data processing documents.</li>
-<li>OPTICON-TAC external science reviewer.</li>
-<li>ING PATT external science reviewer.</li>
-<li>Canadian Time Allocation Committee (CanTAC) external science reviewer.</li>
-<li>The Journal of the Korean Astronomical Society (JKAS).</li>
-<li>Astrophysics and Space Science (ASTR).</li>
-</ul>
-<h2>TEACHING EXPERIENCE</h2>
-<ul>
-<li>Organiser and teacher of the astronomy school <a href="https://github.com/oscaribv/exoplanetas_y_otros_demonios">"De exoplanetas y otros demonios"</a>, December 2019, Bucaramanga, Santander, Colombia.</li>
-<li>Main supervisor of one master student in the Universidad de Guanajuato, Mexico, 2020-present.</li>
-<li>Co-supervisor of two master students in the University of Turin.</li>
-<li>Co-supervisor of two master students in the University of Oxford.</li>
-</ul>
-<h2>LANGUAGE SKILLS</h2>
-<ul>
-<li>Spanish (Native)</li>
-<li>Italian (Fluent)</li>
-<li>English (Fluent)</li>
-</ul>
-<h2>EXPERIENCE IN ASTRONOMY</h2>
-<ul>
-<li><strong>60 nights of observational experience</strong>: Multi-band photometric observations at the 2.1 m telescope in San Pedro Mártir,
-  Ensenada, BC, Mexico (3 nights). 
-  High-resolution spectroscopic observations with FIES at the 2.58 m Nordic Optical Telescope,
-  La Palma, Spain (3 nights). 
-  High-resolution spectroscopic observations with HARPS-N at the <em>Telescopio Nazionale Galileo</em> (TNG) at La Palma, Spain (5 nights).
-  High-resolution spectroscopic observations with HARPS at the ESO La Silla 3.6m
-  telescope, La Silla, Chile (49 nights in 8 runs).</li>
-<li><strong>Theoretical experience</strong>: Theoretical and numerical simulations of fluid physics in astronomy,
-  using classical, relativistic, and general relativistic hydrodynamics. Simulations of relativistic jets
-  by using a GRMHD module written by myself. Circumstellar disks simulations by using the state-of-the-art
-  code FARGO3D, I created the setup, the 3D visualization tool and data interpretation.</li>
-<li><strong>Data analysis</strong>: Simultaneous transit and radial velocity modelling of photometric and spectroscopic
-  data using the Levenberg-Marquardt algorithm and Marcov chain Monte Carlo simulations
-  (Metropolis-Hastings and stretch move algorithms).
-  Experience calculating age, metallicity, reddening, and distance of Open Cluster using
-  BVRI multi-band photometry.</li>
-<li><strong>Data reduction</strong>: Reduction of echelle spectra from FIES@NOT.</li>
-</ul>
-<h2>COMPUTER SKILLS</h2>
-<ul>
-<li><strong>OS</strong>: Linux/Unix (Ubuntu, Fedora), Windows.</li>
-<li><strong>Programming</strong>: git and the web repository <a href="https://github.com/">github</a>, FORTRAN, C,
-  python and parallel computing with OpenMP and MPI.</li>
-<li><strong>Scientific software</strong>: IRAF, supermongo, Paraview, gnuplot, R, Mendeley, LaTeX, topcat, IDL.</li>
-<li><strong>Codes with astronomical application</strong>: <a href="http://fargo.in2p3.fr/">FARGO3D</a>, mercury, CASA.</li>
-<li><strong>Others</strong>: Microsoft Office, Libre Office, WPS Office, inkscape, vi, texmaker, stellarium.</li>
-</ul>
-<h2>OUTREACH EXPERIENCE</h2>
-<ul>
-<li>Online outreach contributions <a href="https://oscaribv.github.io/pages/outreach.html#outreach">here</a></li>
-<li>Participant in Outreach activities organised by the University of Oxford (Jan 2019 - present).</li>
-<li>Invited to outreach talks in different events in different countries (e.g., <em>Pint of Science</em> in UK, <em>Astronomy on Tap</em> in Sweden).</li>
-<li>More than 20 outreach astronomical activities. They include conferences
-  and activities with telescopes, these events have been organized by a collaboration
-  between the University of Guanajuato with different institutions such as
-  <em>Noche de las Estrellas Nacional</em> and <em>Mi Barrio Modelo</em>.</li>
-<li>Invited by different institutions in Mexico for outreach talks such as
-  <em>Centro de Investigaciones en Matemáticas (CIMAT)</em> and <em>Universidad Autónoma de Aguascalientes</em>.</li>
-</ul>
-<h2>PERSONAL INTERESTS</h2>
-<p>When I am not searching for other planets, I am enjoying the serendipities of this one.
-As well as stars, the other things that I like are...</p>
-<ul>
-<li>Sports: football, mixed martial arts, squash, running, street workout</li>
-<li>Music</li>
-<li>Classical and Sci-fi literature</li>
-<li>Art cinema</li>
-<li>Dinosaurs </li>
-<li>Tango dancing</li>
-<li><a href="https://www.flickr.com/photos/oscaribv/">Photography</a></li>
-</ul>  </div>
-</article>
+    <h2>INTRODUCTION</h2>
+    <p>
+      I am a physicist and data scientist passionate about using technology to solve real-world problems. 
+      After earning a Master's in Data-Intensive Science from the University of Cambridge, 
+      I founded <a href="https://satoritutoring.com" target="_blank">Satori Tutoring</a>, where I combine my love for teaching with innovative approaches to learning. 
+      Currently, I am also involved in a full-stack development project, applying my technical skills to create impactful solutions.
+    </p>
+    <h2>POSITIONS</h2>
+    <h4>Satori Tutoring London</h4>
+    <ul>
+    <li>Jun. 2024 - Present</li>
+    <li><a href="https://warwick.ac.uk/fac/sci/physics/research/astro/">Department</a>, UK.</li>
+    </ul>
+    <h4>Pssss</h4>
+    <ul>
+    <li>Jan.nt</li>
+    <li><a href="https://www2.physics.ox.ac.uk/contacts/people/barragan">Departiversity of Oxford</a>, UK.</li>
+    </ul>
+    <h2>SCIENTIFIC & TECHNICAL INTERESTS</h2>
+    <ul>
+      <li>Data Science and Machine Learning</li>
+      <li>Physics-informed Machine Learning</li>
+      <li>Algorithm Development</li>
+      <li>High-Performance Computing</li>
+      <li>Data Visualization</li>
+      <li>Natural Language Processing</li>
+      <li>Numerical Simulations</li>
+    </ul>
+  
+    <h2>PROJECTS</h2>
+    <ul>
+      <li>
+        <strong>Satori Tutoring:</strong> A platform designed to empower students in physics and data science through personalized mentoring and innovative teaching methods. 
+        Learn more at <a href="https://satoritutoring.com" target="_blank">Satori Tutoring</a>.
+      </li>
+      <li>
+        <strong>Full-Stack Development Project:</strong> Working on an exciting, confidential application that integrates advanced data analysis techniques with modern web development tools.
+      </li>
+    </ul>
+  
+    <h2>EDUCATION</h2>
+    <ul>
+      <li>
+        <strong>M.Phil. in Data-Intensive Science:</strong> University of Cambridge. Focus on machine learning, statistical analysis, and big data applications in scientific research.
+      </li>
+      <li>
+        <strong>B.Sc. in Physics:</strong> Achieved a strong foundation in theoretical and experimental physics, honing analytical and problem-solving skills.
+      </li>
+    </ul>
+  
+    <h2>LANGUAGE & TECHNICAL SKILLS</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, JavaScript, SQL</li>
+      <li><strong>Tools:</strong> TensorFlow, PyTorch, Pandas, NumPy, Flask, React</li>
+      <li><strong>OS:</strong> Linux/Unix, Windows, MacOS</li>
+      <li><strong>Languages:</strong> English (Fluent), [Add any others]</li>
+    </ul>
+  
+    <h2>HOBBIES & INTERESTS</h2>
+    <p>When I’m not immersed in code or data, I enjoy exploring the following:</p>
+    <ul>
+      <li>Football and Squash</li>
+      <li>Reading sci-fi and philosophical literature</li>
+      <li>Photography</li>
+      <li>Cooking and experimenting with new cuisines</li>
+      <li>Attending tech meetups and science talks</li>
+    </ul>
+  </div>
 
 <footer>
 <p>&copy;  Oscar Barragán</p>
