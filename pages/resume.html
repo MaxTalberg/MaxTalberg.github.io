@@ -151,93 +151,133 @@
    
   <article class="single">
     <header>
-  
       <h1 id="about">RESUME</h1>
     </header>
     <div class="container">
-      <section class="personal-info">
-          <a href="https://github.com/MaxTalberg">GitHub</a>
-          <a href="mailto:talbergmax@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/max-talberg-80713082/">LinkedIn</a>
-      </section>
-
-
   
       <section>
-          <h2>Education</h2>
-
-              <strong>University of Cambridge | MPhil Data Intensive Science (Distinction)</strong> 2023 - 2024
-                  <ul>
-                      <li>Modules: Classical and Bayesian statistics, supervised and unsupervised machine learning, high-performance computing, and image analysis.</li>
-                      <li>Thesis: Re-examining the putative radial velocity detection of L98-59b utilising a Gaussian Process framework (85%).</li>
-                  </ul>
-              </li>
-             <strong>University of Bath | BSc Physics (First Class)</strong> 2018 - 2022
-                  <ul>
-                      <li>Modules: Fluid dynamics, observational astronomy, mathematics, computational astrophysics, experimental physics, and thermodynamics.</li>
-                  </ul>
-              </li>
-             <strong>Esher College, UK</strong> 2016 - 2018
-                  <ul>
-                      <li>Mathematics (A*), Physics (A), Art and Design (A)</li>
-                      <li>Silver award, Physics Olympiad.</li>
-                  </ul>
-              </li>
+        <h2>Education</h2>
+        <style>
+          ul {
+              margin: 0; /* Remove default margin */
+              padding: 0; /* Remove default padding */
+          }
+          li {
+              margin-bottom: 10px; /* Adds spacing between list items */
+          }
+          .institution {
+              font-size: 1.5em; /* Slightly larger font size for institution */
+              font-weight: normal; /* Keep it bold */
+              margin-bottom: 5px; /* Spacing below the institution name */
+              list-style-type: none; /* No bullet points for institution */
+              margin-top: 20px
+          }
+          .date {
+              font-style: italic; /* Italicize the date */
+              margin-left: 0; /* Align with institution */
+              margin-bottom: 15px; /* Add spacing below the date */
+              list-style-type: none; /* No bullet points for date */
+          }
+          .modules,
+          .thesis {
+              margin-left: 0; /* Align with text */
+              list-style-type: none; /* No bullet points for these sections */
+              margin-bottom: 15px; /* Adds spacing between sections */
+          }
+          .thesis {
+              margin-bottom: 25px; /* Adjust this value to your preferred spacing */
+          }
+          strong {
+              display: block; /* Forces the institution and degree onto a new line */
+              margin-bottom: 5px; /* Adds spacing below the title */
+          }
+          .grade {
+              margin-left: 0;
+              list-style-type: none;
+              margin-bottom: 15px;
+          }
+          .grade-text {
+              font-family: 'Times New Roman', Times, serif; /* Only "Distinction" in Times New Roman */
+          }
+        </style>
+        
+        <div class="institution">University of Cambridge | MPhil Data Intensive Science</div>
+        <div class="date">Sept 2023 - July 2024</div>
+        <ul>
+            <li class="grade">
+                <strong>Grade:</strong> Distinction
+            </li>
+            <li class="modules">
+                <strong>Modules:</strong> Classical and Bayesian statistics, supervised and unsupervised learning, advanced machine learning, deep learning, high-performance computing, best practices in development, data-driven astronomy in the SKA era, and applications of data science to exoplanets.
+            </li>
+            <li class="thesis">
+                <strong>Thesis:</strong> <em><span class="grade-text">Re-examining the putative radial velocity detection of L98-59b utilising a Gaussian Process framework. (85%)</span></em>
+            </li>
+        </ul>
+      
+        <div class="institution">University of Bath | BSc Physics</div>
+        <div class="date">Oct 2018 - Jun 2022</div>
+        <ul>
+            <li class="grade">
+                <strong>Grade:</strong> First Class with Honours
+            </li>
+            <li class="modules">
+                <strong>Modules:</strong> Fluid dynamics, observational astronomy, mathematics, computational astrophysics, special and general relativity, quantum mechanics, experimental Physics and thermodynamics.
+            </li>
+        </ul>
       </section>
   
       <section>
           <h2>Experience</h2>
-              <strong>Intorqa | Data Scientist</strong> Aug 2022 - Sept 2023
-                  <ul>
-                      <li>Fine-tuned a LLM using AWS to perform classification tasks on video game chat forums.</li>
-                      <li>Developed an image processing algorithm to filter Twitter images and automate takedown actions for Rockstar Games.</li>
-                  </ul>
-              </li>
-              <strong>Satori Tutoring | Co-Founder</strong> May 2017 - Present
-                  <ul>
-                      <li>Established a tutoring company providing individual support for levels including 11+, GCSEs, A-levels, and Oxbridge preparation.</li>
-                      <li>Coached 34 students and organized a team of tutors.</li>
-                  </ul>
-              </li>
-              <strong>WPP (formerly Satalia) | Data Scientist</strong> Dec 2020 - Aug 2021
-                  <ul>
-                      <li>Developed a “Digital Twin” model simulating retail logistics with a Python-based interface and deep learning backend.</li>
-                      <li>Researched and presented use cases, leading to a project optimizing chemotherapy patient journeys.</li>
-                  </ul>
-              </li>
+          <div class="institution">Intorqa | Data Scientist</div>
+          <div class="date">2022 - Sept 2023</div>
+          <ul>
+              <li>Fine-tuned a LLM using AWS to perform classification tasks on video game chat forums.</li>
+              <li>Developed an image processing algorithm to filter Twitter images and automate takedown actions for Rockstar Games.</li>
+          </ul>
+        
+          <div class="institution">Satori Tutoring | Co-Founder</div>
+          <div class="date">May 2017 - Present</div>
+          <ul>
+              <li>Established a tutoring company providing individual support for levels including 11+, GCSEs, A-levels, and Oxbridge preparation.</li>
+              <li>Coached 34 students and organized a team of tutors.</li>
+          </ul>
+        
+          <div class="institution">WPP (formerly Satalia) | Data Scientist</div>
+          <div class="date">Dec 2020 - Aug 2021</div>
+          <ul>
+              <li>Developed a “Digital Twin” model simulating retail logistics with a Python-based interface and deep learning backend.</li>
+              <li>Researched and presented use cases, leading to a project optimizing chemotherapy patient journeys.</li>
+          </ul>
       </section>
   
       <section>
           <h2>Projects</h2>
-              <strong>Astrophysics & Fluid Dynamics:</strong>
-                  <ul>
-                      <li>Radial Velocity Simulation (Python) - Used Gaussian Processes to model the L98-59 system.</li>
-                      <li>Exoplanet Analysis (Python) - Investigated four “habitable” exoplanets using the Kepler dataset.</li>
-                      <li>Runge-Kutta Method (Python) - Simulated Lagrange points in the Restricted Three Body Problem.</li>
-                      <li>Monte Carlo Simulation (C) - Modeled photon scattering through an atmosphere.</li>
-                      <li>Fluid Dynamics Simulation (C) - Simulated fluid dynamics in a shock tube.</li>
-                  </ul>
-              </li>
-             <strong>Machine Learning & Automation:</strong>
-                  <ul>
-                      <li>Custom Diffusion Models (TensorFlow) - Built DDPM diffusion model on MNIST dataset.</li>
-                      <li>Radiation Dose Calculator (Python) - Created a Dash app for EDF to calculate radiation exposure.</li>
-                  </ul>
-              </li>
-              <strong>Computing & Tools:</strong>
-                  <ul>
-                      <li>High Performance Computing - Leveraged GPU resources for astrophysics simulations and ML projects.</li>
-                      <li><span style="font-family: 'Times New Roman', serif;">
-                        L<span style="vertical-align: -0.2em;">a</span>T<span style="vertical-align: -0.2em;">e</span><span style="vertical-align: 0.1em;">X</span>
-                    </span>
-                     - Produced technical reports, including on the L98-59 system.</li>
-                  </ul>
-              </li>
+          <div class="institution">Astrophysics & Fluid Dynamics</div>
+          <ul>
+              <li>Radial Velocity Simulation (Python) - Used Gaussian Processes to model the L98-59 system.</li>
+              <li>Exoplanet Analysis (Python) - Investigated four “habitable” exoplanets using the Kepler dataset.</li>
+              <li>Runge-Kutta Method (Python) - Simulated Lagrange points in the Restricted Three Body Problem.</li>
+              <li>Monte Carlo Simulation (C) - Modeled photon scattering through an atmosphere.</li>
+              <li>Fluid Dynamics Simulation (C) - Simulated fluid dynamics in a shock tube.</li>
+          </ul>
+        
+          <div class="institution">Machine Learning & Automation</div>
+          <ul>
+              <li>Custom Diffusion Models (TensorFlow) - Built DDPM diffusion model on MNIST dataset.</li>
+              <li>Radiation Dose Calculator (Python) - Created a Dash app for EDF to calculate radiation exposure.</li>
+          </ul>
+        
+          <div class="institution">Computing & Tools</div>
+          <ul>
+              <li>High Performance Computing - Leveraged GPU resources for astrophysics simulations and ML projects.</li>
+              <li><span style="font-family: 'Times New Roman', serif;">LaTeX - Produced technical reports, including on the L98-59 system.</span></li>
+          </ul>
       </section>
   
       <section>
           <h2>Outreach & Communication</h2>
-          <strong>Institute of Physics</strong>
+          <div class="institution">Institute of Physics</div>
           <ul>
               <li>Promoted STEM fields at public outreach events through interactive sessions.</li>
           </ul>
@@ -245,16 +285,20 @@
   
       <section>
           <h2>Personal Interests</h2>
-            <strong>Disc Jockey:</strong> 
-            <ul>
-                <li>Multi-genre vinyl DJ, performing at festivals, parties, and clubs worldwide.</li>
-            </ul>
-            <strong>Event Manager:</strong>
-            <ul>
-                <li>Executed large-scale live music events, managing all aspects of preparation and leading teams.</li>
-            </ul>
+          <div class="institution">Disc Jockey</div>
+          <ul>
+              <li>Multi-genre vinyl DJ, performing at festivals, parties, and clubs worldwide.</li>
+          </ul>
+        
+          <div class="institution">Event Manager</div>
+          <ul>
+              <li>Executed large-scale live music events, managing all aspects of preparation and leading teams.</li>
+          </ul>
       </section>
-  </div>
+  
+    </div>
+  </article>
+  
   
   <footer>
   <p>&copy;  Max Talberg</p>
