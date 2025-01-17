@@ -144,80 +144,137 @@
     <a href="../pages.random.html">Random</a>
   </nav>
     
-<article class="single">
-  <header>
+  <article class="single">
+    <header>
+      <h1 id="music">MUSIC</h1>
+    </header>
+    <div>
+      <h2>Music</h2>
+      <p>Explore my latest DJ mixes below. Use the interactive waveform player to stream and enjoy.</p>
+  
+      <!-- Waveform container for the first track -->
+      <div id="waveform"></div>
+      <button id="playPause" class="playPauseBtn">
+        <span class="icon">▶</span> <!-- Play Icon -->
+      </button>
+  
+      <!-- Additional tracks -->
+      <div id="waveform2" style="margin-top: 30px;"></div>
+      <button id="playPause2" class="playPauseBtn">
+        <span class="icon">▶</span> <!-- Play Icon -->
+      </button>
+  
+      <!-- Scripts -->
+      <script src="https://unpkg.com/wavesurfer.js"></script>
+      <script>
+        // WaveSurfer instance for the first track
+        const wavesurfer1 = WaveSurfer.create({
+          container: '#waveform',
+          waveColor: 'violet',
+          progressColor: 'purple',
+          backend: 'MediaElement',
+        });
+  
+        // Load the first mix
+        wavesurfer1.load('/music/METH011D-001-Alex_Reece-Pulp_Fiction.wav');
+  
+        // Play/Pause button for the first mix
+        const playPauseBtn1 = document.getElementById('playPause');
+        let isPlaying1 = false;
+        playPauseBtn1.addEventListener('click', () => {
+          if (isPlaying1) {
+            wavesurfer1.pause();
+            playPauseBtn1.classList.remove('playing');
+            playPauseBtn1.classList.add('paused');
+          } else {
+            wavesurfer1.play();
+            playPauseBtn1.classList.remove('paused');
+            playPauseBtn1.classList.add('playing');
+          }
+          isPlaying1 = !isPlaying1;
+        });
+  
+        // WaveSurfer instance for the second track
+        const wavesurfer2 = WaveSurfer.create({
+          container: '#waveform2',
+          waveColor: 'lightblue',
+          progressColor: 'blue',
+          backend: 'MediaElement',
+        });
+  
+        // Load the second mix
+        wavesurfer2.load('/music/METH011D-001-Alex_Reece-Pulp_Fiction.wav');
+  
+        // Play/Pause button for the second mix
+        const playPauseBtn2 = document.getElementById('playPause2');
+        let isPlaying2 = false;
+        playPauseBtn2.addEventListener('click', () => {
+          if (isPlaying2) {
+            wavesurfer2.pause();
+            playPauseBtn2.classList.remove('playing');
+            playPauseBtn2.classList.add('paused');
+          } else {
+            wavesurfer2.play();
+            playPauseBtn2.classList.remove('paused');
+            playPauseBtn2.classList.add('playing');
+          }
+          isPlaying2 = !isPlaying2;
+        });
+      </script>
+    </div>
+  </article>
 
-    <h1 id="about">ABOUT ME</h1>
-  </header>
-  <div>
-    <h2>INTRODUCTION</h2>
-    <p>
-      I am a physicist and data scientist passionate about using technology to solve real-world problems. 
-      After earning a Master's in Data-Intensive Science from the University of Cambridge, 
-      I founded <a href="https://satoritutoring.com" target="_blank">Satori Tutoring</a>, where I combine my love for teaching with innovative approaches to learning. 
-      Currently, I am also involved in a full-stack development project, applying my technical skills to create impactful solutions.
-    </p>
-    <h2>POSITIONS</h2>
-    <h4>Satori Tutoring London</h4>
-    <ul>
-    <li>Jun. 2024 - Present</li>
-    <li><a href="https://warwick.ac.uk/fac/sci/physics/research/astro/">Department</a>, UK.</li>
-    </ul>
-    <h4>Pssss</h4>
-    <ul>
-    <li>Jan.nt</li>
-    <li><a href="https://www2.physics.ox.ac.uk/contacts/people/barragan">Departiversity of Oxford</a>, UK.</li>
-    </ul>
-    <h2>SCIENTIFIC & TECHNICAL INTERESTS</h2>
-    <ul>
-      <li>Data Science and Machine Learning</li>
-      <li>Physics-informed Machine Learning</li>
-      <li>Algorithm Development</li>
-      <li>High-Performance Computing</li>
-      <li>Data Visualization</li>
-      <li>Natural Language Processing</li>
-      <li>Numerical Simulations</li>
-    </ul>
+  <!-- CSS for minimalistic play/pause button -->
+  <style>
+    /* Basic reset for the play button */
+    .playPauseBtn {
+      background-color: white;
+      color: black;
+      border: 2px solid #ddd; /* Light border for contrast */
+      padding: 10px 15px;
+      font-size: 20px;
+      border-radius: 50%; /* Circular button */
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px; /* Smaller size */
+      height: 40px; /* Smaller size */
+    }
+
+    .playPauseBtn:hover {
+      background-color: #f1f1f1; /* Light grey on hover */
+      border-color: #ccc; /* Slightly darker border on hover */
+    }
+
+    /* Optional: Adding a shadow to make the button "pop" */
+    .playPauseBtn:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Play icon */
+    .icon {
+      font-size: 18px; /* Smaller icon */
+      color: #bbb; /* Light grey for play icon */
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    /* If the button is playing, change the icon to pause */
+    .playPauseBtn.playing .icon {
+      color: #333; /* Darker color when playing */
+      transform: rotate(90deg); /* Optional: rotate the play icon when paused */
+    }
+
+    /* Pause icon */
+    .playPauseBtn.paused .icon {
+      content: '❚❚'; /* Pause icon */
+      color: #333; /* Darker color for pause */
+    }
+  </style>
+
   
-    <h2>PROJECTS</h2>
-    <ul>
-      <li>
-        <strong>Satori Tutoring:</strong> A platform designed to empower students in physics and data science through personalized mentoring and innovative teaching methods. 
-        Learn more at <a href="https://satoritutoring.com" target="_blank">Satori Tutoring</a>.
-      </li>
-      <li>
-        <strong>Full-Stack Development Project:</strong> Working on an exciting, confidential application that integrates advanced data analysis techniques with modern web development tools.
-      </li>
-    </ul>
-  
-    <h2>EDUCATION</h2>
-    <ul>
-      <li>
-        <strong>M.Phil. in Data-Intensive Science:</strong> University of Cambridge. Focus on machine learning, statistical analysis, and big data applications in scientific research.
-      </li>
-      <li>
-        <strong>B.Sc. in Physics:</strong> Achieved a strong foundation in theoretical and experimental physics, honing analytical and problem-solving skills.
-      </li>
-    </ul>
-  
-    <h2>LANGUAGE & TECHNICAL SKILLS</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> Python, JavaScript, SQL</li>
-      <li><strong>Tools:</strong> TensorFlow, PyTorch, Pandas, NumPy, Flask, React</li>
-      <li><strong>OS:</strong> Linux/Unix, Windows, MacOS</li>
-      <li><strong>Languages:</strong> English (Fluent), [Add any others]</li>
-    </ul>
-  
-    <h2>HOBBIES & INTERESTS</h2>
-    <p>When I’m not immersed in code or data, I enjoy exploring the following:</p>
-    <ul>
-      <li>Football and Squash</li>
-      <li>Reading sci-fi and philosophical literature</li>
-      <li>Photography</li>
-      <li>Cooking and experimenting with new cuisines</li>
-      <li>Attending tech meetups and science talks</li>
-    </ul>
-  </div>
 
 <footer>
 <p>&copy;  Max Talberg</p>
