@@ -162,40 +162,52 @@
               margin: 0; /* Remove default margin */
               padding: 0; /* Remove default padding */
           }
-          li {
+          .resume-list li {
               margin-bottom: 10px; /* Adds spacing between list items */
           }
+
+          /* Custom styling for other list items (like side column lists) */
+          .side-column li {
+              margin-bottom: 0; /* No spacing for side column lists */
+          }
+
           .institution {
               font-size: 1.5em; /* Slightly larger font size for institution */
               font-weight: normal; /* Keep it bold */
               margin-bottom: 15px; /* Spacing below the institution name */
               list-style-type: none; /* No bullet points for institution */
-              margin-top: 20px
+              margin-top: 20px;
           }
+
           .date {
               font-style: italic; /* Italicize the date */
               margin-left: 0; /* Align with institution */
               margin-bottom: 15px; /* Add spacing below the date */
               list-style-type: none; /* No bullet points for date */
           }
+
           .modules,
           .thesis {
               margin-left: 0; /* Align with text */
               list-style-type: none; /* No bullet points for these sections */
               margin-bottom: 15px; /* Adds spacing between sections */
           }
+
           .thesis {
               margin-bottom: 25px; /* Adjust this value to your preferred spacing */
           }
+
           strong {
               display: block; /* Forces the institution and degree onto a new line */
               margin-bottom: 5px; /* Adds spacing below the title */
           }
+
           .grade {
               margin-left: 0;
               list-style-type: none;
               margin-bottom: 15px;
           }
+
           .grade-text {
               font-family: 'Times New Roman', Times, serif; /* Only "Distinction" in Times New Roman */
           }
@@ -231,21 +243,21 @@
           <h2>Experience</h2>
           <div class="institution">Intorqa | Data Scientist</div>
           <div class="date">2022 - Sept 2023</div>
-          <ul>
+          <ul class="resume-list">
               <li>Fine-tuned a LLM using AWS to perform classification tasks on video game chat forums.</li>
               <li>Developed an image processing algorithm to filter Twitter images and automate takedown actions for Rockstar Games.</li>
           </ul>
         
           <div class="institution">Satori Tutoring | Co-Founder</div>
           <div class="date">May 2017 - Present</div>
-          <ul>
+          <ul class="resume-list">
               <li>Established a tutoring company providing individual support for levels including 11+, GCSEs, A-levels, and Oxbridge preparation.</li>
               <li>Coached 34 students and organized a team of tutors.</li>
           </ul>
         
           <div class="institution">WPP (formerly Satalia) | Data Scientist</div>
           <div class="date">Dec 2020 - Aug 2021</div>
-          <ul>
+          <ul class="resume-list">
               <li>Developed a “Digital Twin” model simulating retail logistics with a Python-based interface and deep learning backend.</li>
               <li>Researched and presented use cases, leading to a project optimizing chemotherapy patient journeys.</li>
           </ul>
@@ -254,7 +266,7 @@
       <section>
           <h2>Projects</h2>
           <div class="institution">Astrophysics & Fluid Dynamics</div>
-          <ul>
+          <ul class="resume-list">
               <li>Radial Velocity Simulation (Python) - Used Gaussian Processes to model the L98-59 system.</li>
               <li>Exoplanet Analysis (Python) - Investigated four “habitable” exoplanets using the Kepler dataset.</li>
               <li>Runge-Kutta Method (Python) - Simulated Lagrange points in the Restricted Three Body Problem.</li>
@@ -263,13 +275,13 @@
           </ul>
         
           <div class="institution">Machine Learning & Automation</div>
-          <ul>
+          <ul class="resume-list">
               <li>Custom Diffusion Models (TensorFlow) - Built DDPM diffusion model on MNIST dataset.</li>
               <li>Radiation Dose Calculator (Python) - Created a Dash app for EDF to calculate radiation exposure.</li>
           </ul>
         
           <div class="institution">Computing & Tools</div>
-          <ul>
+          <ul class="resume-list">
               <li>High Performance Computing - Leveraged GPU resources for astrophysics simulations and ML projects.</li>
               <li><span style="font-family: 'Times New Roman', serif;">LaTeX - Produced technical reports, including on the L98-59 system.</span></li>
           </ul>
