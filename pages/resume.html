@@ -216,10 +216,6 @@
         <div class="date">Sept 2023 - July 2024</div>
         
         <div class="dissertation-section">
-            <a href="pdf/Report.pdf" target="_blank">
-                <img src="pdf/Report.png" alt="Dissertation Cover" class="dissertation-cover">
-            </a>
-        
             <ul>
                 <li class="grade">
                     <strong>Grade:</strong> Distinction
@@ -231,18 +227,23 @@
                     <strong>Thesis:</strong> <em><span class="grade-text">Re-examining the putative radial velocity detection of L98-59b utilising a Gaussian Process framework. (85%)</span></em>
                 </li>
             </ul>
+        
+            <a href="https://github.com/MaxTalberg/RV-detection-of-L98-59/tree/main/report" target="_blank">
+                <img src="../pdf/report_image.png" alt="Dissertation Cover" class="dissertation-cover">
+            </a>
         </div>
         
         <style>
         .dissertation-section {
             display: flex;
+            flex-direction: column;
             align-items: center;
             gap: 20px;
         }
         
         .dissertation-cover {
             width: 200px;
-            height: 200px;
+            max-height: 300px;
             object-fit: cover;
             cursor: pointer;
             transition: transform 0.3s ease;
