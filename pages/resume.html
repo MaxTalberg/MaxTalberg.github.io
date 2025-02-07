@@ -214,17 +214,45 @@
         
         <div class="institution">University of Cambridge | MPhil Data Intensive Science</div>
         <div class="date">Sept 2023 - July 2024</div>
-        <ul>
-            <li class="grade">
-                <strong>Grade:</strong> Distinction
-            </li>
-            <li class="modules">
-                <strong>Modules:</strong> Classical and Bayesian statistics, supervised and unsupervised learning, advanced machine learning, deep learning, high-performance computing, best practices in development, data-driven astronomy in the SKA era, and applications of data science to exoplanets.
-            </li>
-            <li class="thesis">
-                <strong>Thesis:</strong> <em><span class="grade-text">Re-examining the putative radial velocity detection of L98-59b utilising a Gaussian Process framework. (85%)</span></em>
-            </li>
-        </ul>
+        
+        <div class="dissertation-section">
+            <a href="pdf/Report.pdf" target="_blank">
+                <img src="pdf/Report.png" alt="Dissertation Cover" class="dissertation-cover">
+            </a>
+        
+            <ul>
+                <li class="grade">
+                    <strong>Grade:</strong> Distinction
+                </li>
+                <li class="modules">
+                    <strong>Modules:</strong> Classical and Bayesian statistics, supervised and unsupervised learning, advanced machine learning, deep learning, high-performance computing, best practices in development, data-driven astronomy in the SKA era, and applications of data science to exoplanets.
+                </li>
+                <li class="thesis">
+                    <strong>Thesis:</strong> <em><span class="grade-text">Re-examining the putative radial velocity detection of L98-59b utilising a Gaussian Process framework. (85%)</span></em>
+                </li>
+            </ul>
+        </div>
+        
+        <style>
+        .dissertation-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .dissertation-cover {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .dissertation-cover:hover {
+            transform: scale(1.05);
+        }
+        </style>
       
         <div class="institution">University of Bath | BSc Physics</div>
         <div class="date">Oct 2018 - Jun 2022</div>
