@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,38 +22,207 @@
               media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
           href="../theme/pygments/vim.min.css">
 
-
-
   <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
   <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
 
-
-
-
-
-
-
-
-
-
-
- 
-
-
   <meta name="author" content="Max Talberg" />
-  <meta name="description" content="" />
+  <meta name="description" content="Data science MPhil and Physics BSc with experience as a data scientist, including a range of machine learning projects." />
 <meta property="og:site_name" content="Max Talberg's web page"/>
 <meta property="og:type" content="blog"/>
 <meta property="og:title" content="Max Talberg's web page"/>
-<meta property="og:description" content=""/>
+<meta property="og:description" content="Data science MPhil and Physics BSc with experience as a data scientist, including a range of machine learning projects."/>
 <meta property="og:locale" content="en_UK"/>
 <meta property="og:url" content="."/>
 
-
 <link rel="alternate" href="../pages/about.html" hreflang="en" />
 
-<title>Max Talberg's web page &ndash; Welcome</title>
+<title>Max Talberg's web page &ndash; Resume</title>
+
+<style>
+  /* Resume specific styles */
+  .resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .resume-section {
+    margin-bottom: 2rem;
+  }
+  
+  .resume-section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  
+  .institution, .company {
+    font-weight: bold;
+  }
+  
+  .date {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .degree, .position {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-list {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .resume-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project-card {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: var(--text-color, #333); /* Default to #333 if variable not defined */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .project-title {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    color: var(--heading-color, #333);
+  }
+  
+  .project-tech {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .skill-category {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 4px;
+    color: var(--text-color, #333);
+  }
+  
+  .skill-category h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: var(--heading-color, #333);
+  }
+  
+  .interests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .interest-item {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 4px;
+    color: var(--text-color, #333);
+  }
+  
+  .interest-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color, #333);
+  }
+  
+  /* Dark mode adjustments */
+  @media (prefers-color-scheme: dark) {
+    .project-card, .skill-category, .interest-item {
+      background-color: #333;
+      color: #f8f8f8;
+    }
+    
+    .project-title, .skill-category h3, .interest-title {
+      color: #f8f8f8;
+    }
+    
+    .project-tech, .date {
+      color: #aaa;
+    }
+  }
+  
+  /* Theme-specific overrides - these will be set by theme.js */
+  [data-theme="dark"] .project-card,
+  [data-theme="dark"] .skill-category,
+  [data-theme="dark"] .interest-item {
+    background-color: #333;
+    color: #f8f8f8;
+  }
+  
+  [data-theme="dark"] .project-title,
+  [data-theme="dark"] .skill-category h3,
+  [data-theme="dark"] .interest-title {
+    color: #f8f8f8;
+  }
+  
+  [data-theme="dark"] .project-tech,
+  [data-theme="dark"] .date {
+    color: #aaa;
+  }
+  
+  [data-theme="light"] .project-card,
+  [data-theme="light"] .skill-category,
+  [data-theme="light"] .interest-item {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  [data-theme="light"] .project-title,
+  [data-theme="light"] .skill-category h3,
+  [data-theme="light"] .interest-title {
+    color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header-row {
+      flex-direction: column;
+    }
+    
+    .date {
+      margin-top: 0.3rem;
+    }
+    
+    .projects-grid, .skills-container, .interests-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
 
 </head>
 <body >
@@ -71,11 +239,8 @@
 
     <p>MPhil in Data Science</p>
 
-
     <nav>
       <ul class="list">
-
-
             <li>
               <a target="_self"
                  href="../pages/about.html#about">
@@ -111,9 +276,9 @@
                  href="../pages/contact.html#contact">
                 Contact
               </a>
+            </li>
       </ul>
     </nav>
-
 
     <ul class="social">
       <li>
@@ -132,229 +297,317 @@
       </li>
     </ul>
   </div>
-
 </aside>
-  <main>
 
+<main>
   <nav>
     <a href="../">Home</a>
     <a href="../pages/contact.html">Contact</a>
   </nav>
     
-   
   <article class="single">
     <header>
-      <h1 id="about">RESUME</h1>
+      <h1 id="resume">RESUME</h1>
     </header>
-    <div class="container">
-  
-      <section>
+    
+    <div class="resume-container">
+      <div class="resume-intro">
+        <p>Data science MPhil and Physics BSc with 2 years experience as a data scientist, including a range of machine learning projects. Looking to work on challenging projects while learning from experienced data scientists as part of a welcoming community.</p>
+        <p><strong>Languages:</strong> Python (pandas, NumPy, Scikit-learn, Matplotlib, TensorFlow), Git, Docker, C</p>
+      </div>
+      
+      <section class="resume-section">
         <h2>Education</h2>
-        <style>
-          ul {
-              margin: 0; /* Remove default margin */
-              padding: 0; /* Remove default padding */
-          }
-          .resume-list li {
-              margin-bottom: 10px; /* Adds spacing between list items */
-          }
-
-          /* Custom styling for other list items (like side column lists) */
-          .side-column li {
-              margin-bottom: 0; /* No spacing for side column lists */
-          }
-
-          .institution {
-              font-size: 1.5em; /* Slightly larger font size for institution */
-              font-weight: normal; /* Keep it bold */
-              margin-bottom: 15px; /* Spacing below the institution name */
-              list-style-type: none; /* No bullet points for institution */
-              margin-top: 20px;
-          }
-
-          .date {
-              font-style: italic; /* Italicize the date */
-              margin-left: 0; /* Align with institution */
-              margin-bottom: 15px; /* Add spacing below the date */
-              list-style-type: none; /* No bullet points for date */
-          }
-
-          .modules,
-          .thesis {
-              margin-left: 0; /* Align with text */
-              list-style-type: none; /* No bullet points for these sections */
-              margin-bottom: 15px; /* Adds spacing between sections */
-          }
-
-          .thesis {
-              margin-bottom: 25px; /* Adjust this value to your preferred spacing */
-          }
-
-          strong {
-              display: block; /* Forces the institution and degree onto a new line */
-              margin-bottom: 5px; /* Adds spacing below the title */
-          }
-
-          .grade {
-              margin-left: 0;
-              list-style-type: none;
-              margin-bottom: 15px;
-          }
-
-          .grade-text {
-              font-family: 'Times New Roman', Times, serif; /* Only "Distinction" in Times New Roman */
-          }
-        </style>
         
-        <div class="institution">University of Cambridge | MPhil Data Intensive Science</div>
-        <div class="date">Sept 2023 - July 2024</div>
-        
-        <div class="dissertation-section">
-            <ul>
-                <li class="grade">
-                    <strong>Grade:</strong> Distinction
-                </li>
-                <li class="modules">
-                    <strong>Modules:</strong> Classical and Bayesian statistics, supervised and unsupervised learning, advanced machine learning, deep learning, high-performance computing, best practices in development, data-driven astronomy in the SKA era, and applications of data science to exoplanets.
-                </li>
-                <li class="thesis">
-                    <strong>Thesis:</strong> <em><span class="grade-text">Re-examining the putative radial velocity detection of L98-59b utilising a Gaussian Process framework. (85%)</span></em>
-                </li>
-            </ul>
-        
-            <a href="https://github.com/MaxTalberg/RV-detection-of-L98-59/tree/main/report" target="_blank">
-                <img src="../pdf/report_image.png" alt="Dissertation Cover" class="dissertation-cover">
-            </a>
+        <div class="resume-item">
+          <div class="header-row">
+            <div class="institution">University of Cambridge, Queens' College</div>
+            <div class="date">2023 - 2024</div>
+          </div>
+          <div class="degree">MPhil Data Intensive Science (Distinction)</div>
+          <ul class="resume-list">
+            <li>Modules: classical and Bayesian statistics, supervised & unsupervised machine learning, deep learning, high-performance computing.</li>
+            <li>Thesis: Re-examining the putative radial velocity detection of L98-59b utilising a Gaussian Process framework: How reliably can we measure the mass of an exoplanet just half the mass of Venus? (85%)</li>
+          </ul>
         </div>
         
-        <style>
-        .dissertation-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
+        <div class="resume-item">
+          <div class="header-row">
+            <div class="institution">University of Bath</div>
+            <div class="date">2018 - 2022</div>
+          </div>
+          <div class="degree">BSc Physics (First Class)</div>
+          <ul class="resume-list">
+            <li>Modules: fluid dynamics in astrophysics, analysis and research for observational astronomy, mathematics, computational astrophysics, experimental physics & computing, quantum mechanics, thermodynamics, general relativity.</li>
+          </ul>
+        </div>
         
-        .dissertation-cover {
-            width: 150px;
-            max-height: 250px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .dissertation-cover:hover {
-            transform: scale(1.05);
-        }
-        </style>
+        <div class="resume-item">
+          <div class="header-row">
+            <div class="institution">Esher College, UK</div>
+            <div class="date">2016 - 2018</div>
+          </div>
+          <ul class="resume-list">
+            <li>Mathematics (A*), Physics (A), Art and Design (A)</li>
+            <li>Silver award Physics Olympiad.</li>
+          </ul>
+        </div>
+      </section>
       
-        <div class="institution">University of Bath | BSc Physics</div>
-        <div class="date">Oct 2018 - Jun 2022</div>
-        <ul>
-            <li class="grade">
-                <strong>Grade:</strong> First Class with Honours
-            </li>
-            <li class="modules">
-                <strong>Modules:</strong> Fluid dynamics, observational astronomy, mathematics, computational astrophysics, special and general relativity, quantum mechanics, experimental Physics and thermodynamics.
-            </li>
-        </ul>
-      </section>
-  
-      <section>
-          <h2>Experience</h2>
-          <div class="institution">Intorqa | Data Scientist</div>
-          <div class="date">2022 - Sept 2023</div>
-          <ul class="resume-list">
-              <li>Fine-tuned a LLM using AWS to perform classification tasks on video game chat forums.</li>
-              <li>Developed an image processing algorithm to filter Twitter images and automate takedown actions for Rockstar Games.</li>
-          </ul>
+      <section class="resume-section">
+        <h2>Experience</h2>
         
-          <div class="institution">WPP (formerly Satalia) | Data Scientist</div>
-          <div class="date">Dec 2020 - Aug 2021</div>
-          <ul class="resume-list">
-              <li>Developed a “Digital Twin” model simulating retail logistics with a Python-based interface and deep learning backend.</li>
-              <li>Researched and presented use cases, leading to a project optimizing chemotherapy patient journeys.</li>
-          </ul>
-
-          <div class="institution">Satori Tutoring | Co-Founder</div>
-          <div class="date">May 2017 - Present</div>
-          <ul class="resume-list">
-              <li>Established a tutoring company providing individual support for levels including 11+, GCSEs, A-levels, and Oxbridge preparation.</li>
-              <li>Coached 34 students and organized a team of tutors.</li>
-          </ul>
-      </section>
-  
-      <section>
-          <h2>Projects</h2>
-          <div class="institution">Astrophysics & Fluid Dynamics</div>
-          <ul class="resume-list">
-              <li>Radial Velocity Simulation (Python) - Used Gaussian Processes to model the L98-59 system.</li>
-              <li>Exoplanet Analysis (Python) - Investigated four “habitable” exoplanets using the Kepler dataset.</li>
-              <li>Runge-Kutta Method (Python) - Simulated Lagrange points in the Restricted Three Body Problem.</li>
-              <li>Monte Carlo Simulation (C) - Modeled photon scattering through an atmosphere.</li>
-              <li>Fluid Dynamics Simulation (C) - Simulated fluid dynamics in a shock tube.</li>
-          </ul>
+        <div class="resume-item">
+          <div class="header-row">
+            <div class="company">NDA</div>
+            <div class="date">Aug 2023 - Present</div>
+          </div>
+          <div class="position">Developer</div>
+        </div>
         
-          <div class="institution">Machine Learning & Automation</div>
+        <div class="resume-item">
+          <div class="header-row">
+            <div class="company">Intorqa (Gaming Security Startup)</div>
+            <div class="date">Aug 2022 - Sept 2023</div>
+          </div>
+          <div class="position">Data Scientist</div>
           <ul class="resume-list">
-              <li>Custom Diffusion Models (TensorFlow) - Built DDPM diffusion model on MNIST dataset.</li>
-              <li>Radiation Dose Calculator (Python) - Created a Dash app for EDF to calculate radiation exposure.</li>
+            <li>Fine-tuned a LLM using AWS to perform classification tasks including sentiment analysis on video game chat forums.</li>
+            <li>Constructed an image processing algorithm to filter thousands of Twitter images, compare to a leaked content database and automate takedown actions for Rockstar Games.</li>
           </ul>
+        </div>
         
-          <div class="institution">Computing & Tools</div>
+        <div class="resume-item">
+          <div class="header-row">
+            <div class="company">WPP (Formerly Satalia)</div>
+            <div class="date">Dec 2020 - Aug 2021</div>
+          </div>
+          <div class="position">Data Scientist</div>
           <ul class="resume-list">
-              <li>High Performance Computing - Leveraged GPU resources for astrophysics simulations and ML projects.</li>
-              <li><span style="font-family: 'Times New Roman', serif;">LaTeX - Produced technical reports, including on the L98-59 system.</span></li>
+            <li>Developed a "Digital Twin" model simulating retail logistics, creating a Python-based user interface in Dash and a backend using deep learning tools (Pandas, TensorFlow, Sklearn).</li>
+            <li>Researched and presented "Digital Twin" use cases, leading to a project optimising chemotherapy patient journeys.</li>
           </ul>
-      </section>
-  
-      <section>
-          <h2>Outreach & Communication</h2>
-          <div class="institution">Institute of Physics</div>
-          <ul>
-              <li>Promoted STEM fields at public outreach events through interactive sessions.</li>
-          </ul>
-      </section>
-  
-      <section>
-          <h2>Personal Interests</h2>
-          <div class="institution">Disc Jockey</div>
-          <ul>
-              <li>Multi-genre vinyl DJ, performing at festivals, parties, and clubs worldwide.</li>
-          </ul>
+        </div>
         
-          <div class="institution">Event Manager</div>
-          <ul>
-              <li>Executed large-scale live music events, managing all aspects of preparation and leading teams.</li>
+        <div class="resume-item">
+          <div class="header-row">
+            <div class="company">Satori Tutoring</div>
+            <div class="date">May 2017 - Present</div>
+          </div>
+          <div class="position">Co-Founder</div>
+          <ul class="resume-list">
+            <li>Established a tutoring company that caters to 11+, GCSEs, A levels, STEP and Oxbridge preparation.</li>
+            <li>Coached 36 students to date and organised a team of tutors: <a href="http://satoritutoringlondon.co.uk" target="_blank">satoritutoringlondon.co.uk</a>.</li>
           </ul>
+        </div>
       </section>
-  
+      
+      <section class="resume-section">
+        <h2>Projects</h2>
+        
+        <h3>Machine Learning & Data Science</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4 class="project-title">Academic Contribution</h4>
+            <div class="project-tech">Understanding Deep Learning</div>
+            <p>Contributed to Simon J. D. Prince's work on deep learning.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">Cold Diffusion Models</h4>
+            <div class="project-tech">TensorFlow</div>
+            <p>Built DDPM diffusion model on MNIST dataset; created custom degradation model.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">EMSOL Data Science</h4>
+            <div class="project-tech">Scikit-learn</div>
+            <p>Applied DS and unsupervised ML methods to analyse and inform actionable insight.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">Lighthouse Problem</h4>
+            <div class="project-tech">Statistical Methods</div>
+            <p>Implemented Markov chain Monte Carlo statistical method (NUTS) to solve classical lighthouse problem.</p>
+          </div>
+        </div>
+        
+        <h3>Astrophysics & Fluid Dynamics</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4 class="project-title">Radial Velocity Simulation</h4>
+            <div class="project-tech">Python</div>
+            <p>Utilised Gaussian Processes in a nested sampling model on the L98-59 system.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">Exoplanet Analysis</h4>
+            <div class="project-tech">Python</div>
+            <p>Identified and investigated four "habitable" exoplanets using the Kepler dataset.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">Runge-Kutta Method</h4>
+            <div class="project-tech">Python</div>
+            <p>Simulated Lagrange points in the Restricted Three Body Problem.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">Monte Carlo Simulation</h4>
+            <div class="project-tech">C</div>
+            <p>Simulated a Monte Carlo scattering model of photons through an atmosphere.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">Fluid Dynamics Simulation</h4>
+            <div class="project-tech">C</div>
+            <p>Solved Euler's equations to simulate fluid dynamics in a shock tube.</p>
+          </div>
+        </div>
+        
+        <h3>Computing & Tools</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4 class="project-title">High-Performance Computing</h4>
+            <div class="project-tech">CSD3</div>
+            <p>Leveraged GPU resources for astrophysics simulations and ML projects.</p>
+          </div>
+          
+          <div class="project-card">
+            <h4 class="project-title">LaTeX</h4>
+            <div class="project-tech">Documentation</div>
+            <p>Produced technical reports using LaTeX.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resume-section">
+        <h2>Skills</h2>
+        
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Programming</h3>
+            <ul class="resume-list">
+              <li>Python (pandas, NumPy, Scikit-learn, Matplotlib, TensorFlow)</li>
+              <li>Git</li>
+              <li>Docker</li>
+              <li>C</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <ul class="resume-list">
+              <li>Supervised & Unsupervised Learning</li>
+              <li>Deep Learning</li>
+              <li>Statistical Modeling</li>
+              <li>Bayesian Statistics</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Astrophysics & Physics</h3>
+            <ul class="resume-list">
+              <li>Fluid Dynamics</li>
+              <li>Computational Astrophysics</li>
+              <li>Observational Astronomy</li>
+              <li>Simulation & Modeling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resume-section">
+        <h2>Personal Interests</h2>
+        
+        <div class="interests-container">
+          <div class="interest-item">
+            <div class="interest-title">Football</div>
+            <p>Played for a club growing up, as well as in school and university, and now play weekly with a team in South London.</p>
+          </div>
+          
+          <div class="interest-item">
+            <div class="interest-title">Event Manager</div>
+            <p>Executed large-scale live music events, managing all aspects of preparation and leading teams to accommodate crowds of up to 600.</p>
+          </div>
+        </div>
+      </section>
     </div>
   </article>
-  
-  
+
   <footer>
-  <p>&copy;  Max Talberg</p>
-  <p>
-    <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a>
-    <script id="dark-theme-script"
-            src="../theme/dark-theme/dark-theme.min.js"
-            data-enable-auto-detect-theme="True"
-            data-default-theme="light"
-            type="text/javascript">
-    </script>
-  </p></footer>  </main>
-  
-  <script type="application/ld+json">
-  {
-      "@context" : "http://schema.org",
-      "@type" : "Blog",
-      "name": " Max Talberg's web page ",
-      "url" : ".",
-      "image": "",
-      "description": ""
-  }
-  </script>
-  </body>
-  </html>
+    <p>&copy; Max Talberg</p>
+    <p>
+      <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a>
+      <script id="dark-theme-script"
+              src="../theme/dark-theme/dark-theme.min.js"
+              data-enable-auto-detect-theme="True"
+              data-default-theme="light"
+              type="text/javascript">
+      </script>
+    </p>
+  </footer>
+</main>
+
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "Blog",
+    "name": " Max Talberg's web page ",
+    "url" : ".",
+    "image": "",
+    "description": "Data science MPhil and Physics BSc with experience as a data scientist, including a range of machine learning projects."
+}
+</script>
+
+<script>
+  // Additional script to ensure theme changes are applied to custom elements
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to apply theme changes to our custom elements
+    function applyThemeToCustomElements(themeName) {
+      document.body.setAttribute('data-theme', themeName);
+    }
+    
+    // Try to hook into your existing theme switcher
+    if (window.theme && window.theme.switch) {
+      const originalSwitch = window.theme.switch;
+      window.theme.switch = function(themeName) {
+        originalSwitch(themeName);
+        applyThemeToCustomElements(themeName);
+      };
+    }
+    
+    // Initial application based on current theme
+    // This attempts to detect the current theme from various sources
+    const detectCurrentTheme = () => {
+      // Check if theme is stored in localStorage by your theme switcher
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme) {
+        return storedTheme;
+      }
+      
+      // Check if dark theme media query matches
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+      
+      // Default to light theme
+      return 'light';
+    };
+    
+    applyThemeToCustomElements(detectCurrentTheme());
+    
+    // Listen for system theme changes
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        // Only apply if in browser/auto mode
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'browser' || !currentTheme) {
+          applyThemeToCustomElements(e.matches ? 'dark' : 'light');
+        }
+      });
+    }
+  });
+</script>
+</body>
+</html>
